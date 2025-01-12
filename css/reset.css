@@ -123,7 +123,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -133,8 +133,9 @@ table {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ffff;
 }
+
 img {
   display: block;
   border: 0;
