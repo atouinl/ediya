@@ -1,9 +1,9 @@
 @charset 'utf-8';
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('./reset.css');
 
 body {
-  font-family: "Noto Sans KR", serif;
+  font-family: 'Noto Sans KR', serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -51,7 +51,7 @@ header {
   font-weight: 400;
 }
 #site > ul > li:not(.on)::after {
-  content: "line";
+  content: 'line';
   font-size: 0;
   display: inline-block;
   width: 1px;
@@ -83,7 +83,7 @@ header {
   position: relative;
 }
 #account > ul > li::after {
-  content: "line";
+  content: 'line';
   font-size: 0;
   display: inline-block;
   width: 1px;
@@ -116,17 +116,22 @@ header {
   height: 100%;
   padding: 20px 50px;
   box-sizing: border-box;
+  position: relative;
 }
 .logo {
   width: fit-content;
-  height: auto;
+  height: fit-content;
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 #menu {
-  background-color: violet;
+  background-color: rgb(187, 184, 184);
   width: 100%;
   height: fit-content;
+  position: absolute;
+  z-index: 999;
+  font-family: 'Nunito Sans', sans-serif;
 }
 #menu > ul {
   display: flex;
@@ -134,7 +139,6 @@ header {
   align-items: flex-start;
   padding: 30px;
   box-sizing: border-box;
-  position: relative;
 }
 
 #menu > ul > li {
@@ -142,23 +146,29 @@ header {
   overflow: hidden;
 }
 
-#menu > ul > li > a {
+#menu > ul li a {
+  position: relative;
   color: #000;
   font-size: 16px;
   font-weight: 600;
 }
 
-#menu .menu_col > a::after {
+/* 글자 밑에 선인데  스케일 x 늘이거나 줄일수있음 */
+#menu > ul > li > a::after {
   display: block;
-  content: "line";
+  content: 'line';
   font-size: 0;
-  width: 0px;
+  width: 0;
   height: 4px;
   background: red;
+  bottom: -10px;
+  left: 50%;
   position: absolute;
-  top: 50px;
-  left: 90px;
-  margin: 3px auto;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+#menu > ul > li:hover > a::after {
+  width: 100%;
 }
 .submenu {
   width: 100%;
@@ -175,4 +185,46 @@ header {
   color: #243c84;
   font-weight: 500;
   transition: 0.3s;
+}
+
+.main_beanist {
+  background-image: url(../images/main/main_beanist_bg.gif);
+  background-position: center;
+}
+.main_beanist_con {
+  width: 100%;
+  height: 100%;
+}
+
+.main_beanist > h2 {
+  line-height: 1.1em;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 50px;
+  font-weight: 100;
+}
+.main_beanist h2 span {
+  font-weight: 1000;
+  color: #90470c;
+  font-size: 35px;
+}
+
+.main_beanist .block {
+  font-weight: 1000;
+  color: #90470c;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.beanist_img > img {
+  margin: 0 auto;
+}
+
+.beanist_img > p {
+  text-align: center;
+}
+.beanist_img_wrap {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
