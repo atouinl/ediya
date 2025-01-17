@@ -117,6 +117,8 @@ header {
   padding: 20px 50px;
   box-sizing: border-box;
   position: relative;
+  z-index: 54;
+  /* 메뉴가 고정되서 따라다녀야 함 여기 인거 같은데 fiexd 적용안됨 */
 }
 .logo {
   width: fit-content;
@@ -131,6 +133,7 @@ header {
   height: fit-content;
   position: absolute;
   z-index: 54;
+
   /* font-family: 'Nunito Sans', sans-serif; */
 }
 #menu > ul {
@@ -181,7 +184,7 @@ header {
   overflow: hidden;
   line-height: 30px;
   transition: 0.5s;
-  color: #202023;
+  color: #848484;
 }
 
 /* ul에 hover 하면 2차메뉴가 보여진다다 */
@@ -241,38 +244,107 @@ header {
 
 .sec2 {
   width: 100%;
-  height: 100%;
-  background-color: #243c84;
+  height: 460px;
   color: #fff;
   position: relative;
   overflow: hidden;
+  background-image: url(/images/main/dream_factory_bg.gif);
 }
-.dr_img {
+.df_img {
   display: block;
   margin-left: auto;
   position: absolute;
-  top: 1%;
-  right: -100px;
+  top: 109px;
+  right: 180px;
+  z-index: 999;
 }
 
 .factory_con {
+  width: 100%;
+  height: 100%;
   padding: 65px;
+  margin-left: 350px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .factory_con > em {
   display: block;
-  font-size: 60px;
-  font-weight: 600;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.1px #fff;
-  padding: 40px 0;
+  padding: 20px 0;
   box-sizing: border-box;
 }
 .factory_con > h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: 60px;
 }
 
 .factory_con > p {
-  padding-top: 30px;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.df_btn {
+  width: fit-content;
+  height: fit-content;
+}
+.df_btn .btn_01 {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 60px;
+  box-sizing: border-box;
+}
+
+.df_btn .btn_02 {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 60px;
+  box-sizing: border-box;
+  margin-left: 4px;
+}
+
+.df_btn .btn_01:hover {
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.df_btn .btn_02:hover {
+  color: #000;
+  background-color: #fff;
+  font-weight: 600;
+}
+/* 사이즈랑 포지션을 체크 */
+
+.sec3 {
+  width: 100%;
+  height: 100%;
+}
+
+.main_block {
+  width: 100%;
+  height: 500px;
+  background: url(/images/main/block02_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 30%;
+  margin: 0 auto;
+}
+.main_block {
+  text-align: center;
+  position: relative;
+}
+
+.df_btn .btn_03 {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 60px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
