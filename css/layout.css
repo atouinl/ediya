@@ -434,18 +434,20 @@ header {
 }
 .sec5 {
   width: 100%;
-  height: fit-content;
-  /* margin-top: -40px; */
+  height: 600px;
+  margin-top: -40px;
+  padding-top: 60px;
   font-family: 'Nunito Sans', sans-serif;
   /* 그라디언트로 배경주는거 기억해야됨 회색 배경이 길고넓어야함*/
   background: linear-gradient(to bottom, #efefef 50%, #ffffff 50.1%);
+  box-sizing: border-box;
 }
 
 .main_bn_wrap {
   width: fit-content;
   padding: 20px;
-  margin: 0 auto;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   gap: 50px;
@@ -502,11 +504,129 @@ header {
   color: #fff;
 }
 .main_bn_news {
-  width: 330px;
+  width: 370px;
   height: 300px;
-  background-color: chocolate;
+  position: relative;
 }
-.bro {
-  background-color: darkgrey;
-  padding: 40px;
+
+.main_bn_news > h1 {
+  font-size: 25px;
+  padding: 10px 0 10px 0;
+  color: #000;
+}
+
+.main_bn_news > h2 {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  padding: 10px;
+}
+
+.main_bn_news ul {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main_bn_news span {
+  display: block;
+  float: right;
+}
+
+.brochure {
+  width: 100%;
+  height: 100px;
+  background: #cbc3b2;
+}
+.brochure h1 {
+  background: #cbc3b2;
+  margin-left: 35px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  background: url(../images/main/main_brochure_arrow.png) no-repeat bottom left;
+  padding: 30px 0 24px 0;
+  box-sizing: border-box;
+}
+
+.store_search input {
+  border: 1px solid #ffffff;
+  border-top-width: 5px;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  /* 왜 배경이 안먹히는가 */
+  color: #818181;
+}
+.footer_top {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  margin: 0 auto;
+  color: #818181;
+  padding: 10px;
+  border-bottom: 1px solid #464646;
+}
+
+.footer_menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer_menu ul li:nth-child(2) {
+  color: #fff;
+  font-weight: 600;
+}
+.footer_menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer_bottom {
+  background-color: #262626;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+.footer_bottom img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.footer_bottom p {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer_bottom .footer_right_logo {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  right: 384px;
+  top: 67px;
+  border-color: aqua;
+}
+/* 셀렉트 박스 디자인 다시 해볼것 */
+.ftr_select_box {
+  width: 200px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 12px 13px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  background: url(./img/Polygon_up.png) 93% no-repeat; /*화살표 이미지 삽입*/
+  appearance: none;
+  text-align: left;
 }
