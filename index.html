@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDIYA COFFEE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <div class="container_wrap">
@@ -59,6 +61,7 @@
               <a href="/"><img src="./images/common/top_logo_240822.gif" alt="" /></a>
             </h1>
           </div>
+
           <nav id="menu">
             <ul>
               <li>
@@ -127,6 +130,96 @@
               </li>
             </ul>
           </nav>
+          <!-- 모바일 햄버거 아이콘 -->
+          <div class="m_icon">
+            <a href="#"><i class="xi-bars xi-3x"></i></a>
+          </div>
+        </div>
+        <!-- 모바일 메뉴-->
+        <div class="mobile_wrap">
+          <div class="m_xicon">
+            <!--엑스버튼--><a href="#"><i class="xi-close xi-3x"></i></a>
+          </div>
+          <div class="mobile_con">
+            <!--전체영역-->
+
+            <div><!--로그인~SNS--></div>
+            <nav id="mobile_gnb">
+              <ul>
+                <li>
+                  <!--원두 부터고객지원-->
+                  <ul>
+                    <li>
+                      <a href="#"> 원두</a>
+                      <ul class="submenu">
+                        <li><a href="#">이디야 블랜딩</a></li>
+                        <li><a href="#">품질</a></li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="#">메뉴</a>
+                      <ul class="submenu">
+                        <li><a href="#">음료</a></li>
+                        <li><a href="#">푸드</a></li>
+                        <li><a href="#">MD</a></li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="#">유통제품</a>
+                      <ul class="submenu">
+                        <li><a href="#">스틱커피</a></li>
+                        <li><a href="#">커피믹스</a></li>
+                        <li><a href="#">원두커피</a></li>
+                        <li><a href="#">RTD 커피</a></li>
+                        <li><a href="#">스틱 파우더</a></li>
+                        <li><a href="#">수출입거래</a></li>
+                        <li><a href="#">B2B/특판/대리점 거래</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">
+                        이디야 멤버스
+                        <ul class="submenu">
+                          <li><a href="#">멤버십십안내</a></li>
+                          <li><a href="#">서비스안내</a></li>
+                        </ul>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">상품권·제휴카드</a>
+                      <ul class="submenu">
+                        <li><a href="#">제휴카드(하나·신한)</a></li>
+                        <li><a href="#">기프트카드</a></li>
+                        <li><a href="#">모바일상품권</a></li>
+                        <li><a href="#">단체·기업 구매</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">브랜드 소식</a>
+                      <ul class="submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트 안내</a></li>
+                        <li><a href="#">사회공헌 활동</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">고객 지원 · 케이터링</a>
+                      <ul class="submenu">
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">소비자중심경영(CCM)</a></li>
+                        <li><a href="#">제휴·제안</a></li>
+                        <li><a href="#">케이터링</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="m_store_find"><!--매장찾기--></div>
+            <div class="m_ search"><!--검색--></div>
+          </div>
         </div>
       </header>
 
@@ -259,7 +352,7 @@
             </div>
           </div>
         </section>
-        <!-- 섹션4 -->
+        <!-- 섹션5 -->
         <section class="sec5">
           <div class="main_bn_wrap">
             <!-- 가맹점 -->
@@ -320,7 +413,7 @@
               <li><a href="#">Sitemap</a></li>
               <li><a href="#">매장운영 통합시스템(가맹 점주용)</a></li>
             </ul>
-            <div class="ftr_select_box">
+            <div class="footer_select_box">
               <select class="box" id="ftr_box">
                 <option value="korean" selected>Korean</option>
                 <option value="english">English</option>
@@ -333,9 +426,12 @@
         <div class="footer_bottom">
           <img src="./images/common/bottom_logo.png" alt="" />
           <div class="footer_text">
-            서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)<br />TEL : 02-543-6467 FAX :
-            02-543-7191<br />사업자등록번호 : 107-86-16302<br />통신판매업 신고 : 강남 제 002519호<br />
-            대표이사 : 조규동
+            <p>
+              서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)
+              <span>&nbsp; | &nbsp;</span> TEL : 02-543-6467 <span>&nbsp; | &nbsp;</span>FAX : 02-543-7191<br />사업자등록번호
+              : 107-86-16302<span>&nbsp; | &nbsp;</span> 통신판매업 신고 : 강남 제 002519호<span>&nbsp; | &nbsp;</span>
+              대표이사 : 조규동
+            </p>
           </div>
           <p>ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</p>
           <div class="footer_right_logo">

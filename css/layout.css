@@ -128,7 +128,7 @@ header {
   box-sizing: border-box;
 }
 #menu {
-  background-color: rgb(240, 116, 116);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: fit-content;
   position: absolute;
@@ -434,7 +434,7 @@ header {
 }
 .sec5 {
   width: 100%;
-  height: 600px;
+  height: 500px;
   margin-top: -40px;
   padding-top: 60px;
   font-family: 'Nunito Sans', sans-serif;
@@ -557,15 +557,16 @@ header {
   width: 100%;
   height: 100%;
   background-color: #262626;
-  /* 왜 배경이 안먹히는가 */
-  color: #818181;
+  font-weight: 600;
+  color: #6c6c6c;
+  font-family: 'Nunito Sans', sans-serif;
 }
 .footer_top {
   width: 100%;
   height: 100%;
   background-color: #262626;
   margin: 0 auto;
-  color: #818181;
+  color: #6c6c6c;
   padding: 10px;
   border-bottom: 1px solid #464646;
 }
@@ -596,6 +597,7 @@ header {
   padding: 50px;
   box-sizing: border-box;
   position: relative;
+  color: #6c6c6c;
 }
 .footer_bottom img {
   margin: 0 auto;
@@ -612,21 +614,17 @@ header {
   display: block;
   right: 384px;
   top: 67px;
-  border-color: aqua;
 }
-/* 셀렉트 박스 디자인 다시 해볼것 */
-.ftr_select_box {
-  width: 200px;
-  border: 1px solid #c4c4c4;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding: 12px 13px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  background: url(./img/Polygon_up.png) 93% no-repeat; /*화살표 이미지 삽입*/
-  appearance: none;
+/* .footer_select_box {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: url(../images/common/language_arrow.gif) no-repeat 135px 10px;
+  padding-left: 20px;
+  color: #848484;
   text-align: left;
+} */
+
+.footer_text p {
+  font-size: 12px;
 }

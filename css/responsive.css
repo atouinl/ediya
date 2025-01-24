@@ -1,0 +1,40 @@
+@charset 'utf-8';
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header_top {
+    width: 100%;
+    height: 30px;
+  }
+
+  #site > ul > li {
+    width: auto;
+    height: 40px;
+    padding: 0 13px;
+    line-height: 37px;
+    font-size: 12px;
+  }
+  #account {
+    display: none;
+  }
+  .sns {
+    display: none;
+  }
+  .search_wrap {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+  }
+  #menu {
+    display: none;
+  }
+
+  .sec1,
+  .sec2,
+  .sec3,
+  .sec4,
+  .sec5,
+  footer {
+    display: none;
+  }
+}
