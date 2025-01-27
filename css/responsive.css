@@ -5,7 +5,11 @@
     width: 100%;
     height: 30px;
   }
-
+  .header_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   #site > ul > li {
     width: auto;
     height: 40px;
@@ -25,6 +29,15 @@
   .logo {
     margin: 0;
   }
+  .m_icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    background-color: #23a18c;
+    justify-content: center;
+    align-items: center;
+  }
+
   #menu {
     display: none;
   }
@@ -35,6 +48,57 @@
   .sec4,
   .sec5,
   footer {
+    display: none;
+  }
+  .mobile_wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .mobile_con {
+    width: 100%;
+    height: 100%;
+    background-color: #1d326c;
+    color: #fff;
+    font-size: 14px;
+  }
+  .mobile_account_wrap {
+    width: auto;
+    height: auto;
+    display: block;
+  }
+  .mobile_account ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+  }
+  #mobile_gnb {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+  }
+  #mobile_gnb li {
+    padding: 10px 25px;
+    box-sizing: border-box;
+  }
+  #mobile_gnb li {
+    border-top: 1px solid #1d326c;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .mobile_sns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .mobile_sns img {
+    display: block;
+    width: 28px;
+    height: 28px;
+  }
+
+  .mobile_submenu {
     display: none;
   }
 }
