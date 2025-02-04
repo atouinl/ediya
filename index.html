@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDIYA COFFEE</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
@@ -132,14 +132,15 @@
           </nav>
           <!-- 모바일 햄버거 아이콘?? -->
           <div class="m_icon">
-            <a href="#"><i class="xi-bars xi-3x"></i></a>
+            <a href="#"><img src="./images/main/m_menu.svg" alt="모바일햄버거메뉴" /></a>
           </div>
         </div>
+
         <!-- 모바일 메뉴-->
         <div class="mobile_wrap">
           <div class="m_xicon">
             <!--엑스버튼-->
-            <a href="#"><i class="xi-close xi-3x"></i></a>
+            <a href="#"><img src="./images/main/m_close.svg" alt="모바일닫기" /></a>
           </div>
           <div class="mobile_con">
             <!--전체영역-->
@@ -177,7 +178,8 @@
                   <div class="mobile_arrow">
                     <a href="#">원두</a>
                     <div>
-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>
                     </div>
                   </div>
                   <ul class="mobile_submenu">
@@ -189,7 +191,8 @@
                   <div class="mobile_arrow">
                     <a href="#">메뉴</a>
                     <div>
-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>
                     </div>
                   </div>
                   <ul class="mobile_submenu">
@@ -202,7 +205,8 @@
                   <div class="mobile_arrow">
                     <a href="#">유통제품</a>
                     <div>
-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>
                     </div>
                   </div>
                   <ul class="mobile_submenu">
@@ -219,7 +223,8 @@
                   <div class="mobile_arrow">
                     <a href="#">이디아멤버스</a>
                     <div>
-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>
                     </div>
                   </div>
                   <ul class="mobile_submenu">
@@ -231,7 +236,8 @@
                   <div class="mobile_arrow">
                     <a href="#">상품권·제휴카드</a>
                     <div>
-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>
                     </div>
                   </div>
                   <ul class="mobile_submenu">
@@ -245,7 +251,8 @@
                   <div class="mobile_arrow">
                     <a href="#">브랜드소식</a>
                     <div>
-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>
                     </div>
                   </div>
                   <ul class="mobile_submenu">
@@ -258,7 +265,8 @@
                   <div class="mobile_arrow">
                     <a href="#">고객 지원 · 케이터링</a>
                     <div>
-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>
+                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>
                     </div>
                   </div>
                   <ul class="mobile_submenu">
@@ -270,8 +278,21 @@
                 </li>
               </ul>
             </nav>
-            <div class="m_store_find"><!--매장찾기--></div>
-            <div class="m_ search"><!--검색--></div>
+            <div class="m_store_find">(매장찾기)메장찾기<img src="./images/common/m_store_btn.png" alt="" /></div>
+
+            <div class="m_search">
+              <!--검색-->
+              <form action="#" method="post">
+                <div class="m_search_wrap">
+                  <label for="m_search_word">
+                    <input type="text" />
+                    <button type="button">
+                      <img src="./images/common/icon_search.gif" alt="검색" />
+                    </button>
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </header>
@@ -281,30 +302,23 @@
         <section class="sec1">
           <div class="main_visual_wap">
             <div class="main_visual_img">
-              <img src="./images/main/IMG_1734316519198.jpg" alt="이미지1" />
+              <img src="./images/files/banner/IMG_1729817263849.jpg" alt="이미지1" class="big_main_img" />
+              <img src="./images/files/banner/IMG_1729817263205.jpg" alt="이미지1" class="mobile_small_img" />
             </div>
+
             <!-- <div class="main_visual_img">
-              <img src="./images/main/IMG_1734316472816.jpg" alt="이미지2" />
+              <img src="./images/files/banner/IMG_1737331540385.jpg" alt="이미지2" />
             </div>
             <div class="main_visual_img">
               <div class="main_visual_img">
-                <img src="./images/main/IMG_1734316409118.png" alt="이미지3" />
+                <img src="./images/files/banner/IMG_1737419470746.jpg" alt="이미지3" />
               </div>
             </div>
             <div class="main_visual_img">
-              <img src="./images/main/IMG_1734316367599.jpg" alt="이미지4" />
+              <img src="./images/files/banner/IMG_1737679346153.png" alt="이미지4" />
             </div>
             <div class="main_visual_img">
-              <img src="./images/main/IMG_1729817263849.jpg" alt="이미지5" />
-            </div>
-            <div class="main_visual_img">
-              <img src="./images/main/IMG_1736742614874.png" alt="이미지6" />
-            </div>
-            <div class="main_visual_img">
-              <img src="./images/main/IMG_1735604303242.png" alt="이미지7" />
-            </div>
-            <div class="main_visual_img">
-              <img src="./images/main/IMG_1734913819471.jpg" alt="이미지8" />
+              <img src="./images/files/banner/IMG_1737695261364.png" alt="이미지5" />
             </div> -->
           </div>
           <div class="main_beanist">
@@ -493,5 +507,7 @@
         </div>
       </footer>
     </div>
+    <!-- js -->
+    <script src="./js/ediya.js"></script>
   </body>
 </html>
