@@ -198,6 +198,10 @@ header {
   font-size: 14px;
 }
 
+/* 모바일 메인 비쥬얼 숨김?*/
+.main_visual_wap .mobile_small_img {
+  display: none;
+}
 .main_beanist {
   background-image: url(../images/main/main_beanist_bg.gif);
   background-position: center;
@@ -270,17 +274,19 @@ header {
   overflow: hidden;
 }
 
-.factory_con > em {
+/* .factory_con > em {
   display: block;
   padding: 20px 0;
   box-sizing: border-box;
-}
+} */
 .factory_con > h2 {
   font-size: 30px;
   font-weight: 600;
   margin-top: 60px;
 }
-
+.factory_con > h2 > span {
+  display: none;
+}
 .factory_con > p {
   font-size: 15px;
   margin: 30px 0;

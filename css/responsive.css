@@ -29,6 +29,7 @@
   .logo {
     margin: 0;
   }
+  /* 햄버거 아이콘 */
   .m_icon {
     width: 48px;
     height: 48px;
@@ -43,13 +44,76 @@
     background-color: rgb(81, 89, 112);
     display: none;
   }
-  /* 작업해야됨 */
+  /* 섹션 1 모바일 메인 비쥬얼 */
   .main_visual_wap {
     width: fit-content;
     height: auto;
   }
+  /* 메인 비쥬얼 숨김 */
+  .main_visual_img .big_main_img {
+    display: none;
+  }
 
-  .sec2,
+  .main_visual_img .mobile_small_img {
+    margin-top: -90px;
+    display: block;
+  }
+
+  .main_beanist > h2 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 34px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main_beanist > h2 > span {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .beanist_img_wrap p:nth-child(3) {
+    display: none;
+  }
+
+  .beanist_img_wrap p:nth-child(2) {
+    display: block;
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+
+  /* 섹션 2 */
+  .sec2 {
+    width: 100%;
+    position: relative;
+
+    text-align: center;
+  }
+  .factory_con {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .factory_con .df_img {
+    width: 100%;
+    bottom: 100px;
+  }
+
+  /* 여기다시 */
+  .factory_con .df_img {
+    width: 100%;
+  }
+  .factory_con .btn_01 {
+    float: none;
+  }
+  .factory_con .btn_02 {
+    float: none;
+  }
+  .factory_con > img {
+    display: none;
+  }
+  .factory_con .factory_text {
+    display: block;
+  }
   .sec3,
   .sec4,
   .sec5,
@@ -122,6 +186,7 @@
   #mobile_gnb > ul > li:hover > .mobile_submenu {
     display: block;
   }
+  /* 모바일 서브 메뉴 */
   .mobile_submenu {
     background-color: #2a4181;
     display: none;
@@ -139,7 +204,7 @@
     align-items: center;
     margin-right: 20px;
   }
-  .m_store_find {
+  .mobile_store_find {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -149,16 +214,16 @@
     border-bottom: 1px solid #0e2257;
     font-size: 15px;
   }
-  .m_store_find img {
+  .mobile_store_find img {
     width: 15px;
     height: 20px;
     margin: 15px 15px;
   }
-  .m_search {
+  .mobile_search {
     width: auto;
     margin: 30px 0 0 130px;
   }
-  .m_search input {
+  .mobile_search input {
     width: 100px;
     height: 20px;
   }
