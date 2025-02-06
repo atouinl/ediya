@@ -144,16 +144,30 @@
   }
 
   .main_block > p {
-    margin: 0;
     line-height: 30px;
     font-size: 20px;
     word-break: keep-all;
+    margin: 20px 0 29px;
   }
 
   .main_block > h2::after {
+    padding: 0;
     display: none;
   }
-  .sec4,
+  /* 섹션 4 */
+  .sec4 {
+    width: 100%;
+    padding: 0;
+  }
+  .company_block {
+    width: fit-content;
+    position: static;
+    text-align: center;
+  }
+  .company_block > h2 {
+    font-size: 20px;
+  }
+  /* 여기부터 */
   .sec5,
   footer {
     display: none;

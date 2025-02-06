@@ -387,7 +387,11 @@ header {
   line-height: 40px;
   margin: 0 auto;
 }
-
+.btn_03:hover {
+  color: #000;
+  background-color: #fff;
+  font-weight: 600;
+}
 .sec4 {
   width: 100%;
   height: 300px;
