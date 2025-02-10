@@ -444,12 +444,12 @@ header {
 }
 .sec5 {
   width: 100%;
-  height: 500px;
+  height: fit-content;
   margin-top: -40px;
   padding-top: 60px;
   font-family: 'Nunito Sans', sans-serif;
   /* 그라디언트로 배경주는거 기억해야됨 회색 배경이 길고넓어야함*/
-  background: linear-gradient(to bottom, #efefef 50%, #ffffff 50.1%);
+  background: linear-gradient(to bottom, #efefef 74%, #ffffff 50.1%);
   box-sizing: border-box;
 }
 
@@ -459,7 +459,7 @@ header {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 50px;
 }
 
@@ -514,18 +514,22 @@ header {
   color: #fff;
 }
 .main_bn_news {
-  width: 370px;
-  height: 300px;
+  width: 50%;
+  height: 100%;
+}
+.main_bn_news .bn_box {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
-.main_bn_news > h1 {
+.main_bn_news h1 {
   font-size: 25px;
   padding: 10px 0 10px 0;
   color: #000;
 }
 
-.main_bn_news > h2 {
+.main_bn_news h2 {
   position: absolute;
   top: 9px;
   right: 10px;
@@ -543,13 +547,17 @@ header {
 }
 
 .brochure {
-  width: 100%;
-  height: 100px;
+  width: auto;
+  height: 100%;
   background: #cbc3b2;
+  padding: 39px;
+  box-sizing: border-box;
 }
+/* 이어서 작업해야된ㄴㄴㄴㄴㄴㄴㄴㄴ */
 .brochure h1 {
+  width: auto;
+  height: 50%;
   background: #cbc3b2;
-  margin-left: 35px;
   color: #fff;
   font-size: 22px;
   font-weight: 600;
