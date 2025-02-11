@@ -1,2 +1,2 @@
 'use strict';
-const xi 
+const moIcon = document.getElementById('m_icon');

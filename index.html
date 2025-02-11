@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDIYA COFFEE</title>
+    <script src="./js/ediya.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -437,8 +438,8 @@
               <div class="store_search">
                 <!-- 찾기 -->
                 <form action="#" method="post">
-                  <div class="search_wrap">
-                    <label for="search_word">
+                  <div class="store_search_wrap">
+                    <label for="store_search_word">
                       <input type="text" placeholder="FIND A STORE" />
                       <button type="button">
                         <img src="./images/common/icon_search.gif" alt="검색" />
@@ -495,6 +496,13 @@
         </div>
 
         <div class="footer_bottom">
+          <div class="footer_sbox">
+            <select class="box" id="ftr_box">
+              <option value="korean" selected>Korean</option>
+              <option value="english">English</option>
+              <option value="chinese">Chinese</option>
+            </select>
+          </div>
           <img src="./images/common/bottom_logo.png" alt="" />
           <div class="footer_text">
             <p>
