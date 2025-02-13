@@ -4,15 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDIYA COFFEE</title>
-    <!-- 제이쿼리 불러오기 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <!-- Slick 불러오기 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-    <link rel="stylesheet" href="./css/slick-theme.min.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- Swiper slide 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <div class="container_wrap">
@@ -308,88 +303,116 @@
 
       <main>
         <!-- 메인비쥬얼 1 -->
-        <section class="sec1">
-          <div class="main_visual_wap">
-            <div class="main_visual_img">
-              <img src="./images/files/banner/IMG_1729817263849.jpg" alt="이미지1" class="big_main_img" />
-              <img src="./images/files/banner/IMG_1729817263205.jpg" alt="이미지1" class="mobile_small_img" />
+        <section class="main_visual">
+          <div class="swiper">
+            <div class="main_visual_wap swiper-wrapper">
+              <!-- 1번 슬라이드 -->
+              <div class="main_visual_img swiper-slide">
+                <img src="./images/files/banner/IMG_1729817263849.jpg" alt="이미지1" class="big_main_img" />
+                <img src="./images/files/banner/IMG_1729817263205.jpg" alt="이미지1" class="mobile_small_img" />
+              </div>
+              <!-- 2번 슬라이드 -->
+              <div class="main_visual_img swiper-slide">
+                <img src="./images/files/banner/IMG_1737331540385.jpg" alt="이미지2" />
+              </div>
+              <!-- 3번 슬라이드 -->
+              <div class="main_visual_img swiper-slide">
+                <div class="main_visual_img">
+                  <img src="./images/files/banner/IMG_1737419470746.jpg" alt="이미지3" />
+                </div>
+              </div>
+              <!-- 4번 슬라이드 -->
+              <div class="main_visual_img swiper-slide">
+                <img src="./images/files/banner/IMG_1737679346153.png" alt="이미지4" />
+              </div>
+              <!-- 5번 슬라이드 -->
+              <div class="main_visual_img swiper-slide">
+                <img src="./images/files/banner/IMG_1737695261364.png" alt="이미지5" />
+              </div>
             </div>
+            <!-- 페이지네이션 도트 -->
+            <div class="swiper-pagination"></div>
 
-            <div class="main_visual_img">
-              <img src="./images/files/banner/IMG_1737331540385.jpg" alt="이미지2" />
+            <!-- 화살표 버튼 -->
+            <div class="main_visual_prev">
+              <img src="./images/main/main_visual_prev.png" alt="prev" />
             </div>
-            <div class="main_visual_img">
-              <div class="main_visual_img">
-                <img src="./images/files/banner/IMG_1737419470746.jpg" alt="이미지3" />
-              </div>
-            </div>
-            <div class="main_visual_img">
-              <img src="./images/files/banner/IMG_1737679346153.png" alt="이미지4" />
-            </div>
-            <div class="main_visual_img">
-              <img src="./images/files/banner/IMG_1737695261364.png" alt="이미지5" />
-            </div>
-          </div>
-          <div class="main_beanist">
-            <h2><span> Stick Coffee</span>&nbsp;INFORMATION CARD</h2>
-            <div class="main_beanist_con">
-              <!-- 첫번째 슬라이드 -->
-              <div class="beanist_img_wrap">
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_ame01.png" alt="" />
-                  <p class="block">스틱커피 오리지널 아메리카노</p>
-                  <p>Stick Coffee Original Americano</p>
-                </div>
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_ame02.png" alt="" />
-                  <p class="block">스틱커피 마일드 아메리카노</p>
-                  <p>Stick Coffee Original Americano</p>
-                </div>
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_ame03.png" alt="" />
-                  <p class="block">스틱커피 스페셜 아메리카노</p>
-                  <p>Stick Coffee Original Americano</p>
-                </div>
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_ame04.png" alt="" />
-                  <p class="block">스틱커피 디카페인 아메리카노</p>
-                  <p>Stick Coffee Original Americano</p>
-                </div>
-              </div>
-              <!-- 두번쨰 슬라이드 3개 -->
-              <!-- <div class="beanist_img_wrap">
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_latte01.png" alt="" />
-                  <p class="block">스틱커피 까페 라떼</p>
-                  <p>Stick Coffee Caffe Latte</p>
-                </div>
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_latte02.png" alt="" />
-                  <p class="block">스틱커피 바닐라 라떼</p>
-                  <p>Stick Coffee Vanilla Latte</p>
-                </div>
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_latte03.png" alt="" />
-                  <p class="block">스틱커피 토피넛 라떼</p>
-                  <p>Stick Coffee Toffee Nut Latte</p>
-                </div>
-              </div> -->
-              <!-- 세번째 슬라이드 2개-->
-              <!-- <div class="beanist_img_wrap">
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_latte01.png" alt="" />
-                  <p class="block">모카블렌드 커피믹스</p>
-                  <p>Mocha Blend Coffee Mix</p>
-                </div>
-                <div class="beanist_img">
-                  <img src="./images/main/main_stick_latte02.png" alt="" />
-                  <p class="block">골드블렌드 커피믹스</p>
-                  <p>Gold Blend Coffee Mix</p>
-                </div>
-              </div> -->
+            <div class="main_visual_next">
+              <img src="./images/main/main_visual_next.png" alt="next" />
             </div>
           </div>
         </section>
+
+        <section class="sec1 main_beanist">
+          <h2><span> Stick Coffee</span>&nbsp;INFORMATION CARD</h2>
+          <div class="sec1_swiper1">
+            <div class="main_beanist_con swiper-wrapper">
+              <!-- 첫번째 슬라이드 -->
+              <div class="beanist_img_wrap swiper-slide">
+                <div class="stick">
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_ame01.png" alt="" />
+                    <p class="block">스틱커피 오리지널 아메리카노</p>
+                    <p>Stick Coffee Original Americano</p>
+                  </div>
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_ame02.png" alt="" />
+                    <p class="block">스틱커피 마일드 아메리카노</p>
+                    <p>Stick Coffee Original Americano</p>
+                  </div>
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_ame03.png" alt="" />
+                    <p class="block">스틱커피 스페셜 아메리카노</p>
+                    <p>Stick Coffee Original Americano</p>
+                  </div>
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_ame04.png" alt="" />
+                    <p class="block">스틱커피 디카페인 아메리카노</p>
+                    <p>Stick Coffee Original Americano</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 두번쨰 슬라이드 3개 -->
+              <div class="beanist_img_wrap swiper-slide">
+                <div class="stick">
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_latte01.png" alt="" />
+                    <p class="block">스틱커피 까페 라떼</p>
+                    <p>Stick Coffee Caffe Latte</p>
+                  </div>
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_latte02.png" alt="" />
+                    <p class="block">스틱커피 바닐라 라떼</p>
+                    <p>Stick Coffee Vanilla Latte</p>
+                  </div>
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_latte03.png" alt="" />
+                    <p class="block">스틱커피 토피넛 라떼</p>
+                    <p>Stick Coffee Toffee Nut Latte</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 세번째 슬라이드 2개-->
+              <div class="beanist_img_wrap swiper-slide">
+                <div class="stick">
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_latte01.png" alt="" />
+                    <p class="block">모카블렌드 커피믹스</p>
+                    <p>Mocha Blend Coffee Mix</p>
+                  </div>
+                  <div class="beanist_img">
+                    <img src="./images/main/main_stick_latte02.png" alt="" />
+                    <p class="block">골드블렌드 커피믹스</p>
+                    <p>Gold Blend Coffee Mix</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 페이지네이션 도트 2 -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
         <!-- 섹션2 -->
         <section class="sec2">
           <div class="factory_con">
@@ -524,6 +547,9 @@
         </div>
       </footer>
     </div>
+
+    <!-- 슬라이드 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- js -->
     <script src="./js/ediya.js"></script>
   </body>
