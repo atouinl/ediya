@@ -1,0 +1,36 @@
+/** 테블릿 **/
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .main_visual,
+  .sec1,
+  .sec2,
+  .sec3,
+  .sec4,
+  .sec5,
+  footer {
+    display: none;
+  }
+  .header_top {
+    height: 28px;
+  }
+  #account {
+    display: none;
+  }
+  .sns {
+    display: none;
+  }
+
+  /* 상단 검색창*/
+
+  .search_wrap {
+    display: none;
+  }
+  #menu {
+    background-color: rgb(81, 89, 112);
+    display: none;
+  }
+  /* 상단 로고 */
+  .header_bottom .logo {
+    padding: 10px;
+    margin: 0;
+  }
+}
