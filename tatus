@@ -1,0 +1,169 @@
+[33mcommit 5f13ec69c0ef29db4247bdfd9fd8829f1ad5f3cc[m[33m ([m[1;31morigin/restore-css-js[m[33m, [m[1;32mrestore-css-js[m[33m)[m
+Author: atouinl <atouinl@naver.comm>
+Date:   Sat Feb 15 14:47:50 2025 +0900
+
+    20250214_769px
+
+[1mdiff --git a/css/responsive.css b/css/responsive.css[m
+[1mindex 9e7dd43..b2d6b58 100644[m
+[1m--- a/css/responsive.css[m
+[1m+++ b/css/responsive.css[m
+[36m@@ -244,7 +244,7 @@[m
+   .menu_bn_store > h2::after {[m
+     display: block;[m
+     font-size: 0;[m
+[31m-    content: '--';[m
+[32m+[m[32m    content: "--";[m
+     width: 40px;[m
+     height: 1px;[m
+     background-color: #fff;[m
+[36m@@ -325,7 +325,7 @@[m
+     display: flex;[m
+     position: relative;[m
+     z-index: 999;[m
+[31m-    display: none;[m
+[32m+[m[32m    display: block;[m
+   }[m
+   .mobile_con {[m
+     width: 100%;[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex e193e9b..e098b37 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -5,7 +5,10 @@[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />[m
+     <title>EDIYA COFFEE</title>[m
+     <script src="./js/ediya.js"></script>[m
+[31m-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />[m
+[32m+[m[32m    <link[m
+[32m+[m[32m      rel="stylesheet"[m
+[32m+[m[32m      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"[m
+[32m+[m[32m    />[m
+     <link rel="stylesheet" href="./css/layout.css" />[m
+     <link rel="stylesheet" href="./css/responsive.css" />[m
+   </head>[m
+[36m@@ -59,7 +62,9 @@[m
+         <div class="header_bottom">[m
+           <div class="logo">[m
+             <h1>[m
+[31m-              <a href="/"><img src="./images/common/top_logo_240822.gif" alt="" /></a>[m
+[32m+[m[32m              <a href="/"[m
+[32m+[m[32m                ><img src="./images/common/top_logo_240822.gif" alt=""[m
+[32m+[m[32m              /></a>[m
+             </h1>[m
+           </div>[m
+ [m
+[36m@@ -132,8 +137,10 @@[m
+             </ul>[m
+           </nav>[m
+           <!-- 모바일 햄버거 아이콘?? -->[m
+[31m-          <div class="m_icon">[m
+[31m-            <a href="#"><img src="./images/main/m_menu.svg" alt="모바일햄버거메뉴" /></a>[m
+[32m+[m[32m          <div class="m_icon" onclick="sidemenu()">[m
+[32m+[m[32m            <a href="#"[m
+[32m+[m[32m              ><img src="./images/main/m_menu.svg" alt="모바일햄버거메뉴"[m
+[32m+[m[32m            /></a>[m
+           </div>[m
+         </div>[m
+ [m
+[36m@@ -141,7 +148,9 @@[m
+         <div class="mobile_wrap">[m
+           <div class="m_xicon">[m
+             <!--엑스버튼-->[m
+[31m-            <a href="#"><img src="./images/main/m_close.svg" alt="모바일닫기" /></a>[m
+[32m+[m[32m            <a href="#"[m
+[32m+[m[32m              ><img src="./images/main/m_close.svg" alt="모바일닫기"[m
+[32m+[m[32m            /></a>[m
+           </div>[m
+           <div class="mobile_con">[m
+             <!--전체영역-->[m
+[36m@@ -179,8 +188,18 @@[m
+                   <div class="mobile_arrow">[m
+                     <a href="#">원두</a>[m
+                     <div>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>[m
+[32m+[m[32m                      <a href="#"[m
+[32m+[m[32m                        ><img[m
+[32m+[m[32m                          src="./images/common/m_nav_arrow.gif"[m
+[32m+[m[32m                          alt="아래"[m
+[32m+[m[32m                          class="down"[m
+[32m+[m[32m                      /></a>[m
+[32m+[m[32m                      <a href="#"[m
+[32m+[m[32m                        ><img[m
+[32m+[m[32m                          src="./images/common/m_nav_arrow_on.gif"[m
+[32m+[m[32m                          alt="위"[m
+[32m+[m[32m                          class="up"[m
+[32m+[m[32m                      /></a>[m
+                     </div>[m
+                   </div>[m
+                   <ul class="mobile_submenu">[m
+[36m@@ -192,8 +211,18 @@[m
+                   <div class="mobile_arrow">[m
+                     <a href="#">메뉴</a>[m
+                     <div>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>[m
+[32m+[m[32m                      <a href="#"[m
+[32m+[m[32m                        ><img[m
+[32m+[m[32m                          src="./images/common/m_nav_arrow.gif"[m
+[32m+[m[32m                          alt="아래"[m
+[32m+[m[32m                          class="down"[m
+[32m+[m[32m                      /></a>[m
+[32m+[m[32m                      <a href="#"[m
+[32m+[m[32m                        ><img[m
+[32m+[m[32m                          src="./images/common/m_nav_arrow_on.gif"[m
+[32m+[m[32m                          alt="위"[m
+[32m+[m[32m                          class="up"[m
+[32m+[m[32m                      /></a>[m
+                     </div>[m
+                   </div>[m
+                   <ul class="mobile_submenu">[m
+[36m@@ -206,8 +235,18 @@[m
+                   <div class="mobile_arrow">[m
+                     <a href="#">유통제품</a>[m
+                     <div>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>[m
+[32m+[m[32m                      <a href="#"[m
+[32m+[m[32m                        ><img[m
+[32m+[m[32m                          src="./images/common/m_nav_arrow.gif"[m
+[32m+[m[32m                          alt="아래"[m
+[32m+[m[32m                          class="down"[m
+[32m+[m[32m                      /></a>[m
+[32m+[m[32m                      <a href="#"[m
+[32m+[m[32m                        ><img[m
+[32m+[m[32m                          src="./images/common/m_nav_arrow_on.gif"[m
+[32m+[m[32m                          alt="위"[m
+[32m+[m[32m                          class="up"[m
+[32m+[m[32m                      /></a>[m
+                     </div>[m
+                   </div>[m
+                   <ul class="mobile_submenu">[m
+[36m@@ -224,8 +263,18 @@[m
+                   <div class="mobile_arrow">[m
+                     <a href="#">이디아멤버스</a>[m
+                     <div>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>[m
+[32m+[m[32m                      <a href="#"[m
+[32m+[m[32m                        ><img[m
+[32m+[m[32m                          src="./images/common/m_nav_arrow.gif"[m
+[32m+[m[32m                          alt="아래"[m
+[32m+[m[32m                          class="down"[m
+[32m+[m[32m                      /></a>[m
+[32m+[m[32m                      <a href="#"[m
+[32m+[m[32m                        ><img[m
+[32m+[m[32m                          src="./images/common/m_nav_arrow_on.gif"[m
+[32m+[m[32m                          alt="위"[m
+[32m+[m[32m                          class="up"[m
+[32m+[m[32m                      /></a>[m
+                     </div>[m
+                   </div>[m
+                   <ul class="mobile_submenu">[m
+[36m@@ -237,8 +286,18 @@[m
+                   <div class="mobile_arrow">[m
+                     <a href="#">상품권·제휴카드</a>[m
+                     <div>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow.gif" alt="아래" class="down" /></a>[m
+[31m-                      <a href="#"><img src="./images/common/m_nav_arrow_on.gif" alt="위" class="up" /></a>
