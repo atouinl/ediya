@@ -442,7 +442,7 @@
 }
 /** 테블릿 **/
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-  .main_visual,
+  /* .main_visual, */
   .sec1,
   .sec2,
   .sec3,
