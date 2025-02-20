@@ -247,7 +247,7 @@
   .menu_bn_store > h2::after {
     display: block;
     font-size: 0;
-    content: '--';
+    content: "--";
     width: 40px;
     height: 1px;
     background-color: #fff;

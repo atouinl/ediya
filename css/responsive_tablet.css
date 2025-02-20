@@ -64,6 +64,58 @@
     transform: translateY(9px);
     margin-right: 20px;
   }
+  /* sec1 수정사항 없음 */
+
+  /* sec2 */
+
+  .sec2 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    text-align: center;
+  }
+  .factory_con {
+    margin: 0;
+    padding: 0;
+    background: url(../images/main/dream_factory_bg.gif) repeat;
+    z-index: 5;
+  }
+
+  .factory_con .btn_01,
+  .btn_02 {
+    margin: 0 auto;
+    float: none;
+    display: inline-block;
+  }
+
+  .factory_con > img {
+    display: none;
+  }
+  .factory_con .df_img {
+    display: block;
+    top: 320px;
+    right: -85px;
+    z-index: -1;
+  }
+
+  .factory_con .factory_text {
+    display: block;
+    line-height: 50px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .factory_con > p {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .factory_con > h2 {
+    font-weight: 100;
+    font-size: 35px;
+    transform: rotateX(324deg);
+  }
+
   /* 모바일 전체 */
   .mobile_wrap {
     width: 100%;
@@ -194,9 +246,6 @@
   }
   /* 모바일 메뉴 끝 */
 
-  .sec1,
-  .sec2,
-  .sec3,
   .sec4,
   .sec5,
   footer {
