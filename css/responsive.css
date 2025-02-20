@@ -247,7 +247,7 @@
   .menu_bn_store > h2::after {
     display: block;
     font-size: 0;
-    content: "--";
+    content: '--';
     width: 40px;
     height: 1px;
     background-color: #fff;
@@ -346,6 +346,7 @@
     height: auto;
     display: block;
     border-bottom: 1px solid #0e2257;
+    padding: 10px;
   }
   .mobile_account ul {
     width: 100%;
@@ -355,7 +356,7 @@
   .mobile_sns {
     display: flex;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 0;
   }
   .mobile_sns img {
     display: block;
