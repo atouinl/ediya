@@ -58,7 +58,7 @@
 
   .main_visual_img .mobile_small_img {
     margin-top: -5px;
-    display: none;
+    display: block;
   }
 
   .main_beanist > h2 {
