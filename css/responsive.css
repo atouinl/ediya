@@ -934,7 +934,7 @@
     font-size: 14px;
   }
   /* 노트북 로그인 */
-  .mobile_account_wrap {
+  /* .mobile_account_wrap {
     width: auto;
     height: auto;
     display: block;
@@ -978,14 +978,17 @@
     margin: 0;
     padding: 50px 0px 88px 28px;
   }
+  .factory_con > h2 {
+    margin: 0;
+  }
 
   .factory_con > img {
     display: none;
   }
   .factory_con .df_img {
-    left: 399px;
-    top: 183px;
-    right: -160px;
+    left: 356px;
+    top: 109px;
+    right: -161px;
     display: block;
     z-index: 0;
     overflow: hidden;
@@ -1000,16 +1003,88 @@
 
   .sec3 {
     background-size: cover;
-    padding: 30px;
     background-position: right;
+    padding: 47px 41px 66px 29px;
+    box-sizing: border-box;
   }
   .main_block > h2 > span {
     font-weight: 700;
   }
-  .main_block > p {
-    margin-top: 54px;
+
+  .main_block > h2 {
+    padding: 30px;
   }
-  /* 노트북 메뉴 */
+
+  .main_block > h2::after {
+    margin-top: 59px;
+  }
+
+  .main_block > p {
+    margin-top: 25px;
+  }
+
+  /* 노트북 섹션 4 */
+  .sec4 {
+    height: 400px;
+    padding: 0;
+  }
+  .company_block {
+    right: 37px;
+  }
+  .company_block > h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  /* 노트북 섹션 5 */
+  .sec5 {
+    padding: 108px 43px 64px 55px;
+    box-sizing: border-box;
+  }
+  .main_bn_wrap {
+    gap: 5px;
+  }
+  .main_bn {
+    width: 300px;
+    margin-left: -26px;
+  }
+  .main_bn > h2 {
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  .menu_bn_store {
+    width: 300px;
+  }
+
+  .menu_bn_store > h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .menu_bn_store > h2::after {
+    display: block;
+    content: "line";
+    font-size: 0px;
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 26px;
+  }
+  .menu_bn_store > p {
+    padding: 0px 27p;
+  }
+
+  .store_search input {
+    width: 142px;
+  }
+
+  .main_bn_news {
+    margin-right: -26px;
+  }
+  */
+
+  /* 노트북  사이드 전체 메뉴 */
   #mobile_gnb {
     width: 100%;
     height: auto;
@@ -1083,4 +1158,6 @@
     height: 20px;
   }
   /* 노트북 메뉴 끝 */
+}
+@media screen and (min-width: 1280px) {
 }
