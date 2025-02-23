@@ -1082,8 +1082,21 @@
   .main_bn_news {
     margin-right: -26px;
   }
-  */
 
+  /* footer*/
+  .footer_select_box {
+    display: none;
+  }
+  .footer_bottom {
+    padding: 20px;
+  }
+  .footer_sbox {
+    margin-bottom: 21px;
+  }
+  .footer_bottom .footer_right_logo {
+    right: 52px;
+    top: 67px;
+  }
   /* 노트북  사이드 전체 메뉴 */
   #mobile_gnb {
     width: 100%;
@@ -1160,4 +1173,56 @@
   /* 노트북 메뉴 끝 */
 }
 @media screen and (min-width: 1280px) {
+  /* 상단 로고*/
+  .logo {
+    padding: 20px 20px 0px 33px;
+  }
+  /* 상단 menu */
+  #menu > ul {
+    width: 86%;
+  }
+  /* 섹션 2 */
+  .factory_con {
+    padding: 40px;
+    margin: 0;
+  }
+
+  .factory_con .df_img {
+    left: 499px;
+    top: 158px;
+    right: -161px;
+  }
+  /* 섹션3 */
+  .sec3 {
+    padding: 69px 0;
+  }
+  .main_block > h2 {
+    padding: 0;
+  }
+  /* 섹션4 */
+  .company_block {
+    right: 25px;
+  }
+  /* 섹션5 */
+  .menu_bn_store > h2::after {
+    display: block;
+    content: "line";
+    font-size: 0px;
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 26px;
+  }
+  /* footer */
+  .footer_menu ul {
+    padding: 15px;
+  }
+  .footer_sbox {
+    display: none;
+  }
+
+  .footer_bottom .footer_right_logo {
+    right: 31px;
+    top: 45px;
+  }
 }
