@@ -1,0 +1,396 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('./reset.css');
+body {
+  font-family: 'Noto Sans KR', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7em;
+  font-size: 13px;
+  color: #464646;
+}
+.container_wrap {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  /* height: 170px; */
+}
+.header_top {
+  width: 100%;
+  height: 50px;
+  background-color: #243c84;
+  color: #fff;
+  display: flex;
+}
+#site {
+  width: fit-content;
+  height: 100%;
+}
+#site > ul {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#site > ul > li {
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  position: relative;
+}
+#site > ul > li.on {
+  background-color: #fff;
+}
+#site > ul > li.on > a {
+  color: #243c84;
+  font-weight: 400;
+}
+#site > ul > li:not(.on)::after {
+  content: 'line';
+  font-size: 0;
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#site > ul > li:last-child::after {
+  display: none;
+}
+#account {
+  margin-left: auto;
+  width: fit-content;
+  height: 100%;
+}
+
+#account > ul {
+  display: flex;
+  align-items: center;
+}
+#account > ul > li {
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  position: relative;
+}
+#account > ul > li::after {
+  content: 'line';
+  font-size: 0;
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  transform: translateY(190%);
+  background-color: #fff;
+}
+#account > ul > li:last-child::after {
+  display: none;
+}
+.sns {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.search_wrap {
+  width: auto;
+  padding: 0 10px;
+  line-height: 50px;
+}
+
+/* PC메뉴 */
+.herder_bottom {
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 54;
+
+  /* 메뉴가 고정되서 따라다녀야 함 여기 인거 같은데 fiexd 적용안됨 */
+}
+.logo {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#menu {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  z-index: 54;
+  display: block;
+  /* 나중에 풀어야함 */
+  /* font-family: 'Nunito Sans', sans-serif; */
+}
+#menu > ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  line-height: 40px;
+}
+
+#menu > ul > li {
+  width: 100%;
+  overflow: hidden;
+  font-weight: 300;
+  margin: 0 10px;
+  display: block;
+}
+
+#menu > ul > li > a {
+  position: relative;
+  font-size: 15px;
+  color: #202023;
+}
+
+/* 글자 밑에 선인데  스케일 x 늘이거나 줄일수있음 */
+#menu > ul > li > a::after {
+  display: block;
+  content: 'line';
+  font-size: 0;
+  width: 0;
+  height: 4px;
+  background: #2e437c;
+  bottom: -10px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+#menu > ul > li:hover > a::after {
+  width: 100%;
+}
+.submenu {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  line-height: 30px;
+  transition: 0.5s;
+  color: #848484;
+}
+
+/* ul에 hover 하면 2차메뉴가 보여진다다 */
+#menu > ul:hover .submenu {
+  height: 210px;
+}
+.submenu > li > a:hover {
+  color: #243c84;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.mobile_wrap {
+  display: none;
+}
+/* ------------------------------------------------------------------- */
+
+.been_menu_wrap {
+  width: 100%;
+  height: auto;
+  word-break: keep-all;
+}
+
+.been_menu_con {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* sec1 */
+.sec1 {
+  width: 100%;
+  height: 850px;
+  background: url(../images/menu/menu_intro_visual.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 226px 0;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.sec1 .been_menu_img img {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.sec1 p {
+  font-size: 38px;
+  line-height: 62px;
+  color: #fff;
+}
+
+.sec1 span {
+  font-size: 18px;
+  line-height: 54px;
+  color: #fff;
+}
+
+.sec1 .been_menu_btn {
+  width: 530px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 100px;
+}
+.sec1 .been_menu_btn > a {
+  display: block;
+  width: 176px;
+  height: 37px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 13px;
+  line-height: 32px;
+  margin: 0 auto;
+}
+.sec1 .been_menu_btn > a:hover {
+  color: #202023;
+  background-color: #fff;
+}
+/* sec2 */
+.sec2 {
+  width: 100%;
+  height: 680px;
+  background: url(../images/menu/menu_intro_bg01.jpg) no-repeat center;
+  background-size: cover;
+  padding: 226px 0;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.been_menu_con h2 {
+  padding: 0 0 30px;
+  margin: 0 0 30px;
+  background: url(../images/menu/intro_tt.gif) left bottom no-repeat;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+.sec2 p {
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+.sec2 span {
+  font-size: 22px;
+  font-weight: 600;
+  white-space: pre-wrap;
+}
+.sec2 .been_menu_btn > a {
+  display: block;
+  width: 190px;
+  height: 44px;
+  border: 1px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  line-height: 41px;
+  text-align: center;
+}
+/* sec3 */
+.sec3 {
+  width: 100%;
+  height: 680px;
+  background: url(../images/menu/menu_intro_bg02.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 226px 0;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+/* ------------------------------------------------------------------- */
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  font-weight: 600;
+  color: #6c6c6c;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.footer_top {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  margin: 0 auto;
+  color: #6c6c6c;
+  border-bottom: 1px solid #464646;
+}
+.footer_sbox {
+  margin-bottom: 33px;
+  display: none;
+}
+/* footer - 마지막에 수정할것 */
+.footer_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer_menu ul li:nth-child(2) {
+  color: #fff;
+  font-weight: 600;
+}
+.footer_menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer_bottom {
+  background-color: #262626;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative;
+  color: #6c6c6c;
+}
+.footer_bottom img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.footer_bottom p {
+  text-align: center;
+  margin-top: 20px;
+  color: #6c6c6c;
+}
+.footer_bottom .footer_right_logo {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  right: 384px;
+  top: 67px;
+}
+.footer_select_box {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: url(../images/common/language_arrow.gif) no-repeat 135px 10px;
+  padding-left: 20px;
+  color: #848484;
+  text-align: left;
+}
+
+.footer_text p {
+  font-size: 12px;
+}
