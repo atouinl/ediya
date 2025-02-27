@@ -203,13 +203,13 @@ header {
 }
 /* ------------------------------------------------------------------- */
 
-.been_menu_wrap {
+.been_products_wrap {
   width: 100%;
   height: auto;
   word-break: keep-all;
 }
 
-.been_menu_con {
+.been_products_con {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
@@ -218,201 +218,105 @@ header {
 /* sec1 */
 .sec1 {
   width: 100%;
-  height: 850px;
-  background: url(../images/menu/menu_intro_visual.jpg) no-repeat center;
+  height: 460px;
+  background: url(../images/menu/drink_visual.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
-  padding: 226px 0;
+  padding: 140px 0;
   box-sizing: border-box;
   background-clip: padding-box;
 }
-
-.sec1 .been_menu_img img {
-  display: block;
-  margin: auto;
-  margin-bottom: 50px;
-}
-.sec1 p {
-  font-size: 38px;
-  line-height: 62px;
+.sec1 h2 {
+  font-size: 50px;
   color: #fff;
+  line-height: 28px;
 }
 
-.sec1 span {
-  font-size: 18px;
-  line-height: 54px;
+.sec1 p {
+  font-size: 26px;
+  line-height: 53px;
   color: #fff;
 }
 
 .sec1 .been_menu_btn {
-  width: 530px;
+  width: 1169px;
   height: 100%;
   margin: 0 auto;
   display: flex;
-  margin-top: 100px;
+  margin-top: 87px;
 }
 .sec1 .been_menu_btn > a {
   display: block;
-  width: 176px;
+  width: 167px;
   height: 37px;
   border: 1px solid #fff;
   color: #fff;
   font-size: 13px;
-  line-height: 32px;
+  line-height: 35px;
   margin: 0 auto;
 }
 .sec1 .been_menu_btn > a:hover {
   color: #202023;
   background-color: #fff;
 }
+.sec1 .been_menu_btn > a:first-child {
+  color: #202023;
+  background-color: #fff;
+}
+
 /* sec2 */
 .sec2 {
-  width: 100%;
-  height: 680px;
-  background: url(../images/menu/menu_intro_bg01.jpg) no-repeat center;
-  background-size: cover;
-  padding: 226px 0;
-  box-sizing: border-box;
-  background-clip: padding-box;
+  margin-bottom: 50px;
 }
-
-.been_menu_con h2 {
-  padding: 0 0 30px;
-  margin: 0 0 30px;
-  background: url(../images/menu/intro_tt.gif) left bottom no-repeat;
-  font-size: 34px;
-  font-weight: 300;
-  line-height: 55px;
+.sec2 h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #002f6c;
+  line-height: 109px;
 }
 .sec2 p {
-  font-size: 17px;
-  line-height: 24px;
-  margin-bottom: 25px;
-}
-.sec2 span {
-  font-size: 22px;
-  font-weight: 600;
-}
-.sec2 .been_menu_btn > a {
-  display: block;
-  width: 190px;
-  height: 44px;
-  border: 1px solid #000000;
-  color: #000000;
-  font-size: 16px;
-  line-height: 41px;
   text-align: center;
-  margin-top: 50px;
+  font-size: 20px;
+  line-height: 30px;
 }
-.sec2 .been_menu_btn > a:hover {
-  color: #fff;
-  background-color: #002f6c;
-  font-weight: 500;
-}
-
 /* sec3 */
-.sec3 {
-  width: 100%;
-  height: 680px;
-  background: url(../images/menu/menu_intro_bg02.jpg) no-repeat center;
-  background-size: cover;
-  text-align: center;
-  padding: 226px 0;
-  box-sizing: border-box;
-  background-clip: padding-box;
-  position: relative;
-}
-.sec3 .been_menu_con h2 {
-  padding: 0 0 30px;
-  margin: 0 0 30px;
-  background: url(../images/menu/intro_tt_w.gif) left bottom no-repeat;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 55px;
-  color: #fff;
-}
-.sec3 .been_menu_con {
-  width: 500px;
-  height: auto;
+.sec3 .been_products1,
+.been_products2 {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  position: absolute;
-  top: 264px;
-  right: 427px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-.sec3 .been_menu_con p {
-  font-size: 17px;
-  font-weight: 100;
-  color: #fff;
+.sec3 .been_products1,
+.been_products2 img {
+  margin: 0 auto;
+}
+.been_products1 p {
+  line-height: 14px;
+  text-align: left;
+  font-size: 15px;
+}
+.been_products2 p {
+  line-height: 14px;
+  text-align: left;
+  font-size: 15px;
+}
+.been_products1 > span {
   line-height: 50px;
+  text-align: left;
 }
-.sec3 .been_menu_con span {
-  font-size: 23px;
-  font-weight: 600;
-  color: #fff;
+.sec3 .been_products2 span {
+  line-height: 20px;
+  text-align: left;
 }
-.sec3 .been_menu_btn > a {
-  display: block;
-  width: 190px;
-  height: 44px;
-  color: #fff;
-  border: 1px solid #fff;
-  line-height: 40px;
-  font-size: 15px;
-  margin-top: 50px;
+.sec3 .been_products1 {
+  border: 1px solid #6c6c6c;
+  padding: 40px 5%;
 }
 
-.sec3 .been_menu_btn > a:hover {
-  color: #000000;
-  background-color: #fff;
-  font-weight: 500;
-}
 /* sec4 */
-.sec4 {
-  width: 100%;
-  height: 680px;
-  background: url(../images/menu/menu_intro_bg03.jpg) no-repeat center;
-  background-size: cover;
-  padding: 226px 0;
-  box-sizing: border-box;
-  background-clip: padding-box;
-}
 
-.been_menu_con h2 {
-  padding: 0 0 30px;
-  margin: 0 0 30px;
-  background: url(../images/menu/intro_tt.gif) left bottom no-repeat;
-  font-size: 34px;
-  font-weight: 300;
-  line-height: 55px;
-}
-.sec4 p {
-  font-size: 17px;
-  line-height: 24px;
-  margin-bottom: 25px;
-}
-.sec4 span {
-  font-size: 22px;
-  font-weight: 600;
-}
-.sec4 .been_menu_btn > a {
-  display: block;
-  width: 190px;
-  height: 44px;
-  color: #000000;
-  border: 1px solid #000000;
-  line-height: 40px;
-  font-size: 15px;
-  margin-top: 50px;
-  text-align: center;
-}
-.sec4 .been_menu_btn > a:hover {
-  color: #fff;
-  background-color: #002f6c;
-  font-weight: 500;
-}
 /* ------------------------------------------------------------------- */
 /* footer - 마지막에 수정할것 */
 .footer {

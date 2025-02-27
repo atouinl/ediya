@@ -203,6 +203,17 @@ header {
   display: none;
 }
 /* ------------------------------------------------------------------- */
+.been_wrap {
+  width: 100%;
+  height: auto;
+  word-break: keep-all;
+}
+
+.been_main_con {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+}
 /* sec1 */
 .sec1 {
   width: 100%;
@@ -255,10 +266,7 @@ header {
   background-color: #fff;
   color: #000;
 }
-.been_wrap {
-  width: 1180px;
-  margin: 0 auto;
-}
+
 .been_wrap section {
   width: 100%;
   height: auto;
@@ -333,27 +341,23 @@ header {
 
 /* sec 3 */
 .sec3 {
-  border: 1px solid #000;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 130px;
-  border: 1px solid #d9d9d9;
-  padding: 69px 40px;
+  width: 100%;
+  padding: 30px 5%;
   box-sizing: border-box;
-  text-align: left;
+}
+/* 기억해 */
+.sec3 .been_main_con {
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
 }
 
-.been_sec3_txt p:first-child {
-  width: 100%;
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
+.sec3 .been_sec3_txt {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
 }
-.been_sec3_txt p:last-child {
-  font-size: 13px;
+.been_sec3_txt span {
+  font-size: 20px;
 }
 
 /* sec4 */
@@ -428,7 +432,7 @@ header {
 .been_roasting_wrap {
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row wrap;
   gap: 15px;
 }
@@ -536,9 +540,9 @@ h2 {
 .roasting_txt5,
 .roasting_txt6,
 p {
-  font-size: 13px;
   color: #202023;
   font-weight: 500;
+  font-size: 15px;
 }
 /* sec7 */
 .sec7 {
@@ -556,11 +560,13 @@ p {
   border: 1px solid #d9d9d9;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
   box-sizing: border-box;
 }
-
+.been_blending_con {
+  height: auto;
+}
 .been_blending_img img {
   margin: 0 auto;
   padding: 17px 5%;
