@@ -282,17 +282,16 @@ header {
   background: url(../images/menu/intro_tt.gif) left bottom no-repeat;
   font-size: 34px;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 55px;
 }
 .sec2 p {
   font-size: 17px;
   line-height: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .sec2 span {
   font-size: 22px;
   font-weight: 600;
-  white-space: pre-wrap;
 }
 .sec2 .been_menu_btn > a {
   display: block;
@@ -303,7 +302,14 @@ header {
   font-size: 16px;
   line-height: 41px;
   text-align: center;
+  margin-top: 50px;
 }
+.sec2 .been_menu_btn > a:hover {
+  color: #fff;
+  background-color: #002f6c;
+  font-weight: 500;
+}
+
 /* sec3 */
 .sec3 {
   width: 100%;
@@ -314,6 +320,98 @@ header {
   padding: 226px 0;
   box-sizing: border-box;
   background-clip: padding-box;
+  position: relative;
+}
+.sec3 .been_menu_con h2 {
+  padding: 0 0 30px;
+  margin: 0 0 30px;
+  background: url(../images/menu/intro_tt_w.gif) left bottom no-repeat;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 55px;
+  color: #fff;
+}
+.sec3 .been_menu_con {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  position: absolute;
+  top: 264px;
+  right: 427px;
+}
+.sec3 .been_menu_con p {
+  font-size: 17px;
+  font-weight: 100;
+  color: #fff;
+  line-height: 50px;
+}
+.sec3 .been_menu_con span {
+  font-size: 23px;
+  font-weight: 600;
+  color: #fff;
+}
+.sec3 .been_menu_btn > a {
+  display: block;
+  width: 190px;
+  height: 44px;
+  color: #fff;
+  border: 1px solid #fff;
+  line-height: 40px;
+  font-size: 15px;
+  margin-top: 50px;
+}
+
+.sec3 .been_menu_btn > a:hover {
+  color: #000000;
+  background-color: #fff;
+  font-weight: 500;
+}
+/* sec4 */
+.sec4 {
+  width: 100%;
+  height: 680px;
+  background: url(../images/menu/menu_intro_bg03.jpg) no-repeat center;
+  background-size: cover;
+  padding: 226px 0;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.been_menu_con h2 {
+  padding: 0 0 30px;
+  margin: 0 0 30px;
+  background: url(../images/menu/intro_tt.gif) left bottom no-repeat;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 55px;
+}
+.sec4 p {
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.sec4 span {
+  font-size: 22px;
+  font-weight: 600;
+}
+.sec4 .been_menu_btn > a {
+  display: block;
+  width: 190px;
+  height: 44px;
+  color: #000000;
+  border: 1px solid #000000;
+  line-height: 40px;
+  font-size: 15px;
+  margin-top: 50px;
+  text-align: center;
+}
+.sec4 .been_menu_btn > a:hover {
+  color: #fff;
+  background-color: #002f6c;
+  font-weight: 500;
 }
 /* ------------------------------------------------------------------- */
 .footer {
