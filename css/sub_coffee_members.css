@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 1.7em;
-  font-size: 13px;
+  /* font-size: 13px; */
   color: #000000;
 }
 .members_wrap {
@@ -33,29 +33,138 @@ header {
   justify-content: flex-end;
   align-items: center;
   line-height: 20px;
-  padding: 20px;
-  color: 444;
-  font-size: 14px;
+  padding: 15px;
+  color: #444;
+  font-size: 13px;
   font-weight: 500;
+  line-height: 20px;
 }
 #members_top_menu ul {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
+#members_top_menu > ul .store {
+  background-color: #2a47bf;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 4px 4px;
+  font-weight: 500;
+}
+
 #gnb_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
+#gnb_menu img {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 33px;
+}
+
 #gnb_menu ul {
   display: flex;
   gap: 20px;
-  padding: 20px;
+  font-weight: 700;
+  font-size: 17px;
 }
+#gnb_menu > ul > li {
+  width: fit-content;
+  position: relative;
+}
+#gnb_menu > ul > li > a::after {
+  display: block;
+  content: 'line';
+  font-size: 0;
+  width: 0;
+  height: 1px;
+  background: #2e437c;
+  top: 40px;
+  left: 5%;
+  position: absolute;
+  transform: translateY(60%);
+  opacity: 0;
+}
+#gnb_menu > ul:hover > li > a::after {
+  opacity: 1;
+  color: #2a47bf;
+}
+#gnb_menu > ul > li:hover > a::after {
+  width: 100%;
+}
+/* 서브메뉴내리기 */
 #gnb_menu .submenu {
+  width: 100%;
+  height: 0;
   display: flex;
   flex-direction: column;
-  display: none;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 25px;
 }
+
+#gnb_menu > ul:hover .submenu {
+  height: 170px;
+  text-align: left;
+  line-height: 15px;
+}
+.been_members_wrap {
+  width: 100%;
+  height: auto;
+  word-break: keep-all;
+}
+
+.been_members_con {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* 슬라이더 */
+.swiper {
+  width: 600px;
+  height: 300px;
+  background-color: #2a47bf;
+}
+
+/*.mySwiper {
+  width: 100%;
+  height: 500px;
+}
+.swiper-wrapper {
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: sandybrown;
+}
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  background: #fff;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: flex;
+  justify-content: center;
+  display: block;
+  width: 640px;
+  height: 640px;
+  object-fit: cover;
+  /* position: absolute;
+  top: 50px;
+  left: 50px; 
+}
+ */
