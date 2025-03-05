@@ -1,8 +1,8 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('./reset.css');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("./reset.css");
 body {
-  font-family: 'Noto Sans KR', serif;
+  font-family: "Noto Sans KR", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -81,7 +81,7 @@ header {
 }
 #gnb_menu > ul > li > a::after {
   display: block;
-  content: 'line';
+  content: "line";
   font-size: 0;
   width: 0;
   height: 1px;
@@ -141,7 +141,7 @@ header {
   height: fit-content;
   margin-top: -30px;
   padding-top: 60px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   /* 그라디언트로 배경주는거 기억해야됨 회색 배경이 길고넓어야함*/
   background: linear-gradient(to bottom, #f8f8f8 100%, #ffffff 50.1%);
   box-sizing: border-box;
@@ -157,6 +157,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -165,7 +166,6 @@ header {
   align-items: center;
   position: relative;
 }
-
 .swiper-slide p {
   position: absolute;
   top: 243px;
@@ -185,8 +185,8 @@ header {
 
 .swiper-slide img {
   display: block;
-  width: 620px;
-  height: 620px;
+  width: 615px;
+  height: 615px;
   object-fit: cover;
 }
 
