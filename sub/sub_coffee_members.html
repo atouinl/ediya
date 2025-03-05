@@ -6,6 +6,8 @@
     <title>이디야</title>
     <link rel="stylesheet" href="../css/sub_coffee_members.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
+    <!-- AOS 불러오기 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Swiper slide 불러오기 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
@@ -20,8 +22,12 @@
               <li><a href="#">로그인</a></li>
               <li><a href="#">회원가입</a></li>
               <li><a href="#">매장찾기</a></li>
-              <li><a href="#">APP다운로드</a></li>
-              <li><a href="#" class="store">이디아스토어</a></li>
+              <li>
+                <a href="#">APP다운로드</a>
+              </li>
+              <li>
+                <a href="#" class="store">이디아스토어</a>
+              </li>
             </ul>
           </nav>
 
@@ -54,12 +60,13 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide">
+                  <div div class="swiper-slide" data-aos="fade-right">
                     <p>
                       새로운 주문 서비스를 통해 메뉴 주문을 다양하게<br />
 
                       <span> 배달주문/ 매달주문</span>
                     </p>
+
                     <img src="/images/main/bnr_mem_03.png" alt="" />
                   </div>
                   <div class="swiper-slide">
@@ -96,7 +103,6 @@
         </div>
         <!-- 메인비쥬얼 1 -->
       </main>
-
       <!-- footer -->
       <footer>
         <div class="footer_top">
@@ -146,7 +152,13 @@
 
     <!-- 슬라이드 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- js -->
     <script src="/js/members.js"></script>
+    <script src="https://cdn.bootcss.com/aos/2.3.4/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
