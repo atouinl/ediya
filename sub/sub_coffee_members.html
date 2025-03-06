@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="../css/responsive.css" />
 
     <!-- Swiper slide 불러오기 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- AOS 불러오기 -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -59,28 +56,25 @@
       <!-- 메인 -->
       <main>
         <div class="been_members_wrap">
+          <!-- 1번째 -->
           <section class="mem_sec1">
             <div class="been_members_con">
+              <!-- 메인비쥬얼 1 -->
               <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div
-                    class="swiper-slide"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-center"
-                  >
+                  <!-- 첫번째 슬라이드 -->
+                  <div class="swiper-slide">
                     <p>
                       새로운 주문 서비스를 통해 메뉴 주문을 다양하게<br />
                       <span> 배달주문/ 매달주문</span>
                     </p>
-                    <img src="/images/main/bnr_mem_03.png" alt="" />
+                    <img src="/images/main/bnr_mem_02.png" alt="" />
                   </div>
-                  <div
-                    class="swiper-slide"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom"
-                  >
+
+                  <!-- 두번쨰 슬라이드 -->
+                  <div class="swiper-slide">
                     <p>
                       <a href="#"
                         >내가 원할때 편리하게 <br />
@@ -89,13 +83,11 @@
 
                       <span> <a href="#">new이디야 멤버스</a></span>
                     </p>
-                    <img src="/images/main/bnr_mem_02.png" alt="" />
+                    <img src="/images/main/bnr_mem_01.png" alt="" />
                   </div>
-                  <div
-                    class="swiper-slide"
-                    data-aos="fade-up"
-                    data-aos-anchor-placement="top-center"
-                  >
+
+                  <!-- 세번쨰 슬라이드 -->
+                  <div class="swiper-slide">
                     <p>
                       <a href="#"
                         >결제부터 스탬프적립<br />
@@ -104,7 +96,7 @@
 
                       <span><a href="#">이디아 QR</a></span>
                     </p>
-                    <img src="/images/main/bnr_mem_01.png" alt="" />
+                    <img src="/images/main/bnr_mem_03.png" alt="" />
                   </div>
                 </div>
 
@@ -115,8 +107,32 @@
               </div>
             </div>
           </section>
+          <!-- 2번째 -->
+          <section>
+            <div class="been_members_con">
+              <h2>서비스 안내</h2>
+              <p>
+                이디야멤버스 회원이라면<br />
+                누릴 수 있는 모든 것
+              </p>
+              <div class="been_members_all">
+                <div class="been_members_left">
+                  <img src="/images/common/icon_svc_evt.png" alt="" />
+                  <p class="left_text">
+                    이디야가 준비한 <span>풍부한 <br />혜택</span>, 함께해요.
+                  </p>
+                  <p class="left_sub_text">
+                    이디야에서 진행하는 다양한 이벤트 소식과 혜택을 편리하게 접하세요~! BLUE등급이 되시면 적립하신
+                    스탬프를 다양한 혜택으로 교환하여 사용하실 수 있습니다.
+                  </p>
+                  <a href="#">자세히 보기 ></a>
+                </div>
+
+                <div class="been_members_right"><img src="/images/main/svc_01.png" alt="" /></div>
+              </div>
+            </div>
+          </section>
         </div>
-        <!-- 메인비쥬얼 1 -->
       </main>
       <!-- footer -->
       <footer>
@@ -151,12 +167,9 @@
           <img src="../images/common/bottom_logo.png" alt="" />
           <div class="footer_text">
             <p>
-              서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동
-              221-17)
-              <span>&nbsp; | &nbsp;</span> TEL : 02-543-6467
-              <span>&nbsp; | &nbsp;</span>FAX : 02-543-7191<br />사업자등록번호
-              : 107-86-16302<span>&nbsp; | &nbsp;</span> 통신판매업 신고 : 강남
-              제 002519호<span>&nbsp; | &nbsp;</span>
+              서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)
+              <span>&nbsp; | &nbsp;</span> TEL : 02-543-6467 <span>&nbsp; | &nbsp;</span>FAX : 02-543-7191<br />사업자등록번호
+              : 107-86-16302<span>&nbsp; | &nbsp;</span> 통신판매업 신고 : 강남 제 002519호<span>&nbsp; | &nbsp;</span>
               대표이사 : 조규동
             </p>
           </div>
@@ -170,12 +183,8 @@
 
     <!-- 슬라이드 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- js -->
     <script src="/js/members.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
