@@ -1,8 +1,8 @@
 @charset 'utf-8';
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('./reset.css');
 body {
-  font-family: "Noto Sans KR", serif;
+  font-family: 'Noto Sans KR', serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -81,7 +81,7 @@ header {
 }
 #gnb_menu > ul > li > a::after {
   display: block;
-  content: "line";
+  content: 'line';
   font-size: 0;
   width: 0;
   height: 1px;
@@ -141,7 +141,7 @@ header {
   height: 800px;
   margin-top: -30px;
   padding-top: 60px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   /* 그라디언트로 배경주는거 기억해야됨 회색 배경이 길고넓어야함*/
   background: linear-gradient(to bottom, #f8f8f8 100%, #ffffff 50.1%);
   box-sizing: border-box;
@@ -195,7 +195,21 @@ header {
 .swiper-scrollbar {
   display: none;
 }
-/* 1번째 섹션 */
+/* 2번째 섹션이자 1-4번째 공통 부분 */
+
+.arrow {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 12px;
+  background: linear-gradient(to bottom, #f8f8f8 100%, #ffffff 50.1%);
+}
+.arrow img {
+  display: block;
+  margin: 0 auto;
+  width: 12px;
+  height: 12px;
+}
 .been_members_con h2 {
   text-align: center;
   color: #2a47bf;
@@ -254,10 +268,213 @@ header {
   width: 88px;
   height: 88px;
 }
-/* 2번째 섹션 */
+
 .been_members_sec3_all {
   width: 988px;
   height: 700px;
   display: flex;
   align-items: center;
+}
+.been_members_sec4_all {
+  width: 988px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.been_members_sec5_all {
+  width: 988px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+/* 섹션 3 */
+
+.been_news_background {
+  background-color: #faf7f4;
+}
+.been_news_all {
+  width: 1542px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.been_news_notic {
+  margin-left: 20px;
+}
+.been_news_notic > h2 {
+  font-size: 24px;
+  text-align: left;
+  color: #2a47bf;
+  line-height: 7px;
+  font-weight: 600;
+}
+.been_news_notic > p {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.been_news_list .new1,
+.new2,
+.new3 {
+  width: 682px;
+  height: 72px;
+  font-size: 15px;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 11px;
+}
+.been_news_list .new1,
+.new2,
+.new3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.been_news_notic a {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  color: #666;
+  line-height: 54px;
+  border-radius: 4px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+}
+
+/* 섹션 4 */
+
+.been_help_background {
+  width: 100%;
+  overflow: hidden;
+  background: url(../images/temp/bg_cs.jpg) no-repeat top;
+  background-size: cover;
+}
+
+.been_help_all {
+  height: 563px;
+}
+.been_help_all h2 {
+  text-align: left;
+}
+
+.been_help_tit > p {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 84px;
+}
+.been_help_tit > span {
+  font-size: 20px;
+  color: #666;
+  line-height: 40px;
+}
+.been_help_num p {
+  color: #666;
+  font-size: 18px;
+  margin-top: 45px;
+}
+.been_help_num a {
+  font-size: 18px;
+  border: 1px solid #000000;
+  line-height: 54px;
+  border-radius: 4px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-top: 50px;
+}
+
+.been_help_num a:hover {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.help_btn {
+  margin-top: 42px;
+}
+/* ------------------------------------------------------------------- */
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  font-weight: 600;
+  color: #6c6c6c;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.footer_top {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  margin: 0 auto;
+  color: #6c6c6c;
+  border-bottom: 1px solid #464646;
+}
+.footer_sbox {
+  margin-bottom: 33px;
+  display: none;
+}
+/* footer - 마지막에 수정할것 */
+.footer_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.footer_menu ul li:nth-child(2) {
+  color: #fff;
+  font-weight: 600;
+}
+.footer_menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer_bottom {
+  background-color: #262626;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative;
+  color: #6c6c6c;
+}
+.footer_bottom img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.footer_bottom p {
+  text-align: center;
+  margin-top: 20px;
+  color: #6c6c6c;
+}
+.footer_bottom .footer_right_logo {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  right: 384px;
+  top: 67px;
+}
+.footer_select_box {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: url(../images/common/language_arrow.gif) no-repeat 135px 10px;
+  padding-left: 20px;
+  color: #848484;
+  text-align: left;
+}
+
+.footer_text p {
+  font-size: 12px;
 }
