@@ -3,12 +3,14 @@
 AOS.init();
 
 function sidemenu() {
+  const moIcon = document.querySelector('.m_icon');
+  const moxIcon = document.querySelector('.m_xicon');
   if (moIcon.style.display === 'none') {
     moIcon.style.display = 'block';
-    m_xicon.style.display = 'block';
+    moxIcon.style.display = 'block';
   } else {
     moIcon.style.display = 'none';
-    m_xicon.style.display = 'none';
+    moxIcon.style.display = 'none';
   }
 }
 // 햄버거 버튼
