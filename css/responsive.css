@@ -247,7 +247,7 @@
   .menu_bn_store > h2::after {
     display: block;
     font-size: 0;
-    content: "--";
+    content: '--';
     width: 40px;
     height: 1px;
     background-color: #fff;
@@ -663,7 +663,7 @@
   .menu_bn_store > h2::after {
     display: block;
     font-size: 0;
-    content: "--";
+    content: '--';
     width: 40px;
     height: 1px;
     background-color: #fff;
@@ -1064,7 +1064,7 @@
 
   .menu_bn_store > h2::after {
     display: block;
-    content: "line";
+    content: 'line';
     font-size: 0px;
     width: 40px;
     height: 1px;
@@ -1175,7 +1175,7 @@
 @media screen and (max-width: 1280px) {
   /* 상단 로고*/
   .logo {
-    padding: 20px 20px 0px 33px;
+    padding: 0px 20px 0px 17px;
   }
   /* 상단 menu */
   #menu > ul {
@@ -1206,7 +1206,7 @@
   /* 섹션5 */
   .menu_bn_store > h2::after {
     display: block;
-    content: "line";
+    content: 'line';
     font-size: 0px;
     width: 40px;
     height: 1px;

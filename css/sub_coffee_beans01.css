@@ -238,7 +238,6 @@ header {
 }
 .sub_txt_line {
   color: #b9b8b8;
-  line-height: 20px;
   font-size: 18px;
   line-height: 80px;
 }
@@ -319,6 +318,16 @@ header {
   box-sizing: border-box;
 }
 
+/* 반응형을 위한 이미지 설정 */
+.been_card1 > img {
+  margin: 0;
+}
+.been_card2 > img {
+  margin: 0;
+}
+.been_card3 > img {
+  margin: 0;
+}
 .sub_been_intro_wrap .card1 {
   display: flex;
   align-items: center;
@@ -395,12 +404,20 @@ header {
   font-size: 14px;
   font-weight: 500;
 }
+.been_char_img {
+  padding: 20px;
+}
 /* sec5 */
 /* 모바일할때 이미지 줄여지고 확대되는 부분 확인 */
 .sec5 {
   object-fit: contain;
 }
-
+.sec5 .pc_img {
+  display: block;
+}
+.sec5 .mt_img {
+  display: none;
+}
 .sec5 h3 {
   font-size: 20px;
   font-weight: 400;
