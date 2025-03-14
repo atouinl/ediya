@@ -438,7 +438,18 @@
   .sec1 {
     margin-top: 50px;
   }
-
+  .sub_btn a {
+    margin: 0;
+    border: 1px solid #84847c;
+  }
+  .sub_btn a:first-child {
+    background-color: #84847c;
+    color: #fff;
+  }
+  .sub_btn a:hover {
+    background-color: #84847c;
+    color: #fff;
+  }
   /* 테블릿 sec 2 */
   .sub_timepage {
     display: none;
@@ -1065,5 +1076,27 @@
     flex-direction: column;
     width: 91%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* sec2-7수정건 없음 */
+  /* sec1 */
+  .sub_btn a {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #84847c;
+  }
+  /* footer */
+  .footer_menu ul {
+    padding: 15px;
+  }
+  .footer_sbox {
+    display: none;
+  }
+
+  .footer_bottom .footer_right_logo {
+    right: 31px;
+    top: 45px;
   }
 }
