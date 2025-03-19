@@ -64,7 +64,7 @@
     display: block;
     margin: 0 auto;
     display: inline-block;
-    margin: 3px 30px 3px 0;
+    margin: 3px 0px 3px 0;
   }
 
   .footer_select_box {
@@ -230,7 +230,7 @@
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 52px;
+    margin-top: 46px;
   }
   .sec1 .been_menu_btn .pr_btn {
     width: calc(100% / 2);
@@ -623,9 +623,11 @@
   }
   .sec1 .been_menu_btn .pr_btn:nth-child(5) {
     border-bottom: 1px solid #84847c;
+    box-sizing: border-box;
   }
   .sec1 .been_menu_btn .pr_btn:nth-child(6) {
     border-bottom: 1px solid #84847c;
+    box-sizing: border-box;
   }
 
   .sec1 .been_menu_btn .pr_btn:hover {
