@@ -285,6 +285,7 @@
   .sec3 .been_products_con {
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
+    flex-direction: column;
   }
   .sec3 .been_products1,
   .been_products2 {
@@ -335,19 +336,23 @@
   .sec6 .been_products_con h2 {
     margin: 0px 10px 30px;
   }
-  .been_pro_box1,
-  .been_pro_box2 {
-    width: auto;
-    height: 55px;
-    padding: 25px 25px;
-    align-items: center;
-  }
-  .been_pro_box3 {
+  .been_pro_box1 > p,
+  .been_pro_box2 > p,
+  .been_pro_box3 > p {
+    font-size: 15px;
     width: 252px;
-    height: 55px;
-    padding: 25px 25px;
-    margin-bottom: 50px;
   }
+
+  .been_pro_box1,
+  .been_pro_box2,
+  .been_pro_box3 {
+    width: auto;
+    height: auto;
+    gap: 10px;
+    align-items: center;
+    padding: 25px;
+  }
+
   /* 모바일 sec7 */
   .been_merit_con {
     gap: 23px;
@@ -356,7 +361,7 @@
     flex-direction: column;
   }
   .sec7 .been_products_con h2 {
-    margin: 0px 10px 30px;
+    margin: 27px 10px 30px;
   }
   .been_merit_circle1 {
     width: 240px;
