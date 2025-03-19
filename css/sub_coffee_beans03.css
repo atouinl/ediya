@@ -222,19 +222,19 @@ header {
   background: url(../images/menu/drink_visual.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
-  padding: 140px 0;
+  padding: 150px 0;
   box-sizing: border-box;
   background-clip: padding-box;
 }
 .sec1 h2 {
   font-size: 50px;
   color: #fff;
-  line-height: 28px;
+  line-height: 34px;
 }
 
 .sec1 p {
   font-size: 26px;
-  line-height: 66px;
+  line-height: 87px;
   color: #fff;
 }
 
@@ -244,23 +244,36 @@ header {
   margin: 0 auto;
   display: flex;
   margin-top: 87px;
+  color: #fff;
 }
-.sec1 .been_menu_btn .menu_btn,
-.menu_btn1 {
+
+.sec1 .been_menu_btn > div {
   display: block;
   width: 176px;
   height: 37px;
+  border: 1px solid #929292;
+  line-height: 36px;
+  color: #464646;
+}
+.sec1 .been_menu_btn .pr_btn:nth-child(1) {
+  background-color: #fff;
+  color: #464646;
+}
+/* .sec1 .been_menu_btn .pr_btn,
+.pr_btn1 {
+  display: block;
   border: 1px solid #818181;
   color: #fff;
   font-size: 13px;
   line-height: 32px;
   margin: 0 auto;
-}
-.sec1 .been_menu_btn .menu_btn:hover {
-  color: #202023;
+} */
+
+.sec1 .been_menu_btn .pr_btn:hover {
+  color: #464646;
   background-color: #fff;
 }
-.sec1 .been_menu_btn .menu_btn1:hover {
+.sec1 .been_menu_btn .pr_btn1:hover {
   color: #202023;
   background-color: #fff;
 }
@@ -275,6 +288,7 @@ header {
   font-weight: 500;
   color: #002f6c;
   line-height: 109px;
+  margin-top: 50px;
 }
 .sec2 p {
   text-align: center;
@@ -301,28 +315,23 @@ header {
   gap: 20px;
 }
 
-.sec3 .been_products1 {
+.sec3 .been_products {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
-.sec3 .been_products2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.been_products1 span {
+
+.been_products span {
   font-size: 20px;
   font-weight: 600;
   line-height: 50px;
 }
-.been_products2 span {
+/* .been_products span {
   font-size: 20px;
   font-weight: 600;
   line-height: 50px;
-}
+} */
 /* sec4 */
 
 .been_products_btn {
@@ -364,12 +373,6 @@ header {
   position: relative;
   margin-bottom: 50px;
 }
-.been_products_line1,
-.been_products_line2,
-.been_products_line3,
-.been_products_line4 {
-  margin: 0;
-}
 
 .been_products_list .been_products_line1::after {
   display: block;
@@ -380,7 +383,7 @@ header {
   background-color: #ddd;
   position: absolute;
   top: 18px;
-  right: 283px;
+  right: 290px;
 }
 
 .been_products_list .been_products_line2::after {
@@ -405,7 +408,7 @@ header {
   background-color: #ddd;
   position: absolute;
   top: 18px;
-  right: 895px;
+  right: 880px;
 }
 .been_products_list img {
   width: 263px;
@@ -416,48 +419,52 @@ header {
 .text2 {
   width: 263px;
   text-align: center;
+  margin-left: 15px;
 }
 
 .been_products_line2 .text1,
 .text2 {
   width: 263px;
   text-align: center;
+  margin-left: 15px;
 }
 .been_products_line3 .text1,
 .text2 {
   width: 263px;
   text-align: center;
+  margin-left: 15px;
 }
 .been_products_line4 .text1,
 .text2 {
   width: 263px;
   text-align: center;
+  margin-left: 15px;
 }
 /* ---------------------------------------------  */
 .been_products_line1 .text1 {
   display: block;
   font-weight: 600;
   font-size: 16px;
-  margin: 13px 0px 11px 0px;
+  margin: 15px 0px 11px 22px;
 }
 .been_products_line2 .text1 {
   display: block;
   font-weight: 600;
   font-size: 16px;
-  margin: 13px 0px 11px 0px;
+  margin: 15px 0px 11px 22px;
 }
 
 .been_products_line3 .text1 {
   display: block;
   font-weight: 600;
   font-size: 16px;
-  margin: 13px 0px 11px 0px;
+  margin: 15px 0px 11px 22px;
 }
 .been_products_line4 .text1 {
   display: block;
   font-weight: 600;
   font-size: 16px;
-  margin: 13px 0px 11px 0px;
+  margin: 15px 0px 11px 22px;
 }
 /* ---------------------------------------------  */
 
@@ -472,6 +479,7 @@ header {
   font-weight: 600;
   font-size: 17px;
   color: #c75218;
+  text-align: c;
 }
 .been_products_line3 .text1 span {
   display: block;
@@ -502,6 +510,7 @@ header {
   height: 126px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: #f4f4f2;
 }
 
@@ -516,7 +525,6 @@ header {
 .been_pro_box2 > p,
 .been_pro_box3 > p {
   font-size: 15px;
-  width: 450px;
 }
 .been_pro_box1_img1 {
   width: 21px;
@@ -544,7 +552,16 @@ header {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  position: relative;
+}
+.been_merit_con > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  gap: 10px;
 }
 .sec7 .been_products_con h2 {
   padding: 0 0 30px;
@@ -555,24 +572,12 @@ header {
 }
 
 /* 동그라미1 */
+
 .been_merit_circle1 {
   width: 280px;
   height: 280px;
   background-color: #1a437b;
   border-radius: 50%;
-}
-.been_merit_circle1 img {
-  position: absolute;
-  top: 61px;
-  left: 228px;
-}
-.been_merit_circle1 p {
-  position: absolute;
-  top: 145px;
-  left: 200px;
-  text-align: center;
-  font-size: 17px;
-  color: #ddd;
 }
 
 /* 동그라미2 */
@@ -582,19 +587,6 @@ header {
   background-color: #1a437b;
   border-radius: 50%;
 }
-.been_merit_circle2 img {
-  position: absolute;
-  top: 61px;
-  left: 561px;
-}
-.been_merit_circle2 p {
-  position: absolute;
-  top: 145px;
-  left: 541px;
-  text-align: center;
-  font-size: 17px;
-  color: #ddd;
-}
 
 /* 동그라미3 */
 .been_merit_circle3 {
@@ -602,19 +594,6 @@ header {
   height: 280px;
   background-color: #1a437b;
   border-radius: 50%;
-}
-.been_merit_circle3 img {
-  position: absolute;
-  top: 61px;
-  right: 237px;
-}
-.been_merit_circle3 p {
-  position: absolute;
-  top: 145px;
-  right: 207px;
-  text-align: center;
-  font-size: 17px;
-  color: #ddd;
 }
 
 /* ------------------------------------------------------------------- */
