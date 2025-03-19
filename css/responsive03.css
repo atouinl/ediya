@@ -729,4 +729,78 @@
   .been_products_list > div {
     width: fit-content;
   }
+  /* 테블릿 sec6 */
+  .sec6 .been_products_con h2 {
+    margin: 0px 25px 30px;
+  }
+  .been_products_card_wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pro_icon {
+    display: none;
+  }
+  .been_pro_box1,
+  .been_pro_box2,
+  .been_pro_box3 {
+    width: 95%;
+    height: 126px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f4f4f2;
+  }
+  .been_pro_box1 > p,
+  .been_pro_box2 > p,
+  .been_pro_box3 > p {
+    font-size: 15px;
+    padding-right: ;
+  }
+  /* 테블릿 sec7 */
+  .been_merit_con {
+    gap: 20px;
+  }
+  .sec7 .been_products_con h2 {
+    margin: 0px 25px 30px;
+  }
+  /* 동그라미1 */
+  .been_merit_circle1 {
+    width: 226px;
+    height: 226px;
+  }
+  .been_merit_circle1 img {
+    top: 61px;
+    left: 108px;
+  }
+  .been_merit_circle1 p {
+    top: 145px;
+    left: 86px;
+  }
+  /* 동그라미2 */
+  .been_merit_circle2 {
+    width: 226px;
+    height: 226px;
+  }
+
+  .been_merit_circle2 img {
+    top: 61px;
+    left: 363px;
+  }
+  .been_merit_circle2 p {
+    top: 145px;
+    left: 338px;
+  }
+  /* 동그라미3 */
+  .been_merit_circle3 {
+    width: 226px;
+    height: 226px;
+  }
+  .been_merit_circle3 img {
+    top: 61px;
+    right: 114px;
+  }
+  .been_merit_circle3 p {
+    top: 145px;
+    right: 79px;
+  }
 }

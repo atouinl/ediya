@@ -490,6 +490,11 @@ header {
 .sec6 {
   margin-bottom: 50px;
 }
+.been_products_card_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .been_pro_box1,
 .been_pro_box2,
 .been_pro_box3 {
@@ -497,15 +502,9 @@ header {
   height: 126px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   background-color: #f4f4f2;
-  gap: 10px;
 }
-.been_products_card_wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .sec6 .been_products_con h2 {
   padding: 0 0 30px;
   margin: 0 0 30px;
@@ -513,15 +512,17 @@ header {
   font-size: 20px;
   font-weight: 300;
 }
-.been_pro_box1,
-.been_pro_box2,
+.been_pro_box1 > p,
+.been_pro_box2 > p,
 .been_pro_box3 > p {
   font-size: 15px;
+  width: 450px;
 }
 .been_pro_box1_img1 {
   width: 21px;
   height: 27px;
 }
+
 .been_pro_box1_mg2 {
   width: 66px;
   height: 66px;
@@ -552,14 +553,14 @@ header {
   font-size: 20px;
   font-weight: 300;
 }
+
+/* 동그라미1 */
 .been_merit_circle1 {
   width: 280px;
   height: 280px;
   background-color: #1a437b;
   border-radius: 50%;
 }
-
-/* 동그라미1 */
 .been_merit_circle1 img {
   position: absolute;
   top: 61px;
@@ -573,14 +574,14 @@ header {
   font-size: 17px;
   color: #ddd;
 }
-.been_merit_circle1 {
+
+/* 동그라미2 */
+.been_merit_circle2 {
   width: 280px;
   height: 280px;
   background-color: #1a437b;
   border-radius: 50%;
 }
-
-/* 동그라미2 */
 .been_merit_circle2 img {
   position: absolute;
   top: 61px;
@@ -594,14 +595,14 @@ header {
   font-size: 17px;
   color: #ddd;
 }
-.been_merit_circle2 {
+
+/* 동그라미3 */
+.been_merit_circle3 {
   width: 280px;
   height: 280px;
   background-color: #1a437b;
   border-radius: 50%;
 }
-
-/* 동그라미3 */
 .been_merit_circle3 img {
   position: absolute;
   top: 61px;
@@ -615,12 +616,7 @@ header {
   font-size: 17px;
   color: #ddd;
 }
-.been_merit_circle3 {
-  width: 280px;
-  height: 280px;
-  background-color: #1a437b;
-  border-radius: 50%;
-}
+
 /* ------------------------------------------------------------------- */
 /* footer - 마지막에 수정할것 */
 .footer {
