@@ -60,11 +60,11 @@
     position: relative;
   }
   .footer_menu ul {
-    width: auto;
+    width: 100%;
     display: block;
     margin: 0 auto;
     display: inline-block;
-    margin: 3px 0px 3px 0;
+    margin: 3px 30px 3px 0;
   }
 
   .footer_select_box {
@@ -80,7 +80,6 @@
   }
   .footer_sbox {
     order: 0;
-    display: block;
   }
 
   .footer_bottom .footer_right_logo {
@@ -450,7 +449,6 @@
   }
   .footer_sbox {
     margin-bottom: 20px;
-    display: block;
   }
   .footer_bottom .footer_right_logo {
     right: 332px;
@@ -855,7 +853,6 @@
   }
   .footer_sbox {
     margin-bottom: 21px;
-    display: block;
   }
   .footer_bottom .footer_right_logo {
     right: 52px;
@@ -1096,12 +1093,11 @@
   #menu > ul {
     width: 86%;
   }
-  /* footer */
   .footer_menu ul {
     padding: 15px;
   }
   .footer_sbox {
-    display: block;
+    display: none;
   }
 
   .footer_bottom .footer_right_logo {
