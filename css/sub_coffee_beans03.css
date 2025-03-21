@@ -667,10 +667,6 @@ header {
   display: block;
   height: 28px;
   line-height: 28px;
-  background: url(../images/common/language_arrow.gif) no-repeat 135px 10px;
-  padding-left: 20px;
-  color: #848484;
-  text-align: left;
 }
 
 .footer_text p {

@@ -390,6 +390,7 @@
   }
   .footer_sbox {
     margin-bottom: 20px;
+    display: block;
   }
   .footer_bottom .footer_right_logo {
     right: 332px;

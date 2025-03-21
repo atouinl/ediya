@@ -237,34 +237,46 @@ header {
   margin-bottom: 50px;
 }
 .been_customer_btn {
+  width: 334px;
+  height: fit-content;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.been_customer_btn a {
-  display: block;
-  width: 167px;
-  height: 37px;
-  border: 1px solid #99b0b6;
-  line-height: 34px;
+.been_customer_btn .cu_btn {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #848484;
   box-sizing: border-box;
 }
-.been_customer_btn a:nth-child(1) {
+
+.been_customer_btn .cu_btn a {
+  display: flex;
+  width: 167px;
+  height: 37px;
+  justify-content: center;
+  align-items: center;
+}
+/* 선 */
+
+.been_customer_btn .cu_btn > a:nth-of-type(2) {
+  border-left: 1px solid #848484;
+}
+.been_customer_btn .cu_btn:first-of-type {
+  border-right: none;
+}
+
+/* hover */
+.been_customer_btn .cu_btn > a:nth-of-type(1):hover {
   background-color: #848484;
   color: #fff;
 }
-.been_customer_btn a:nth-child(2):hover {
+.been_customer_btn .cu_btn > a:nth-of-type(2):hover {
   background-color: #848484;
   color: #fff;
 }
-.been_customer_btn a:nth-child(3):hover {
-  background-color: #848484;
-  color: #fff;
-}
-.been_customer_btn a:nth-child(4):hover {
-  background-color: #848484;
-  color: #fff;
-}
+
 /* sec2 */
 .been_customer_sec2 {
   margin-bottom: 50px;
@@ -584,6 +596,7 @@ header {
   color: #6c6c6c;
   border-bottom: 1px solid #464646;
 }
+
 .footer_sbox {
   margin-bottom: 33px;
   display: none;
@@ -637,10 +650,6 @@ header {
   display: block;
   height: 28px;
   line-height: 28px;
-  background: url(../images/common/language_arrow.gif) no-repeat 135px 10px;
-  padding-left: 20px;
-  color: #848484;
-  text-align: left;
 }
 
 .footer_text p {

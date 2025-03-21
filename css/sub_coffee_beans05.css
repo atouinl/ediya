@@ -243,7 +243,6 @@ header {
 }
 .been_notic_btn a {
   display: block;
-
   border: 1px solid #99b0b6;
   line-height: 34px;
   box-sizing: border-box;
@@ -274,7 +273,7 @@ header {
 }
 /* sec2 */
 
-.been_notic_con {
+.sec2 .been_notic_con {
   display: flex;
 }
 .been_notic_search_bar {
@@ -307,37 +306,61 @@ header {
   width: 80%;
 }
 /* sec3 */
+
+.sec3 .been_notic_wrap {
+  width: 100%;
+  margin: 0 auto;
+}
 .been_notic_con {
   position: relative;
 }
-.notic_notic_wrap {
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-/* div 으로 만들고 에프터나 비포로 선 긋고 다시 만들어봐 */
-.cc::before {
-  display: block;
-  content: '-';
-  background-color: #c9c9c9;
-  font-size: 0;
-  width: 99%;
-  height: 2px;
-  font-size: 20px;
+.notic_con {
+  width: 80%;
 }
 
-.noic_con > p {
-  font-size: 15px;
-  word-break: keep-all;
-}
-.notic_day {
-  padding: 50px;
-}
-.wrap {
+.notic_wrap li {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(0, 0, 0);
 }
-/* 다시 수정해야됨 */
+
+.notic_con h5 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.notic_con p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.notic_con > p > span {
+  display: none;
+}
+.notic_con > br {
+  display: none;
+}
+.notic_no {
+  padding: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.notic_day span {
+  padding: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+}
+.notic_wrap .notic_line {
+  border-top: 1px solid rgb(197, 197, 197);
+  box-sizing: border-box;
+}
+
 .notic_page {
   display: flex;
   gap: 34px;
@@ -347,9 +370,6 @@ header {
   margin-bottom: 20px;
 }
 
-.notic_notic_wrap > ul {
-  display: flex;
-}
 /* sec4 */
 
 /* sec5 */
