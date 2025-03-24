@@ -158,7 +158,7 @@ header {
 
 #menu > ul > li > a {
   position: relative;
-  font-size: 15px;
+  font-size: 14px;
   color: #202023;
 }
 
@@ -234,15 +234,15 @@ header {
 .been_customer_sec1 p {
   font-size: 19px;
   line-height: 24px;
-  margin-bottom: 50px;
 }
 .been_customer_btn {
-  width: 334px;
+  width: 100%;
   height: fit-content;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 .been_customer_btn .cu_btn {
   display: flex;
@@ -253,7 +253,7 @@ header {
 
 .been_customer_btn .cu_btn a {
   display: flex;
-  width: 167px;
+  width: calc(100% / 2);
   height: 37px;
   justify-content: center;
   align-items: center;
@@ -355,6 +355,12 @@ header {
   text-align: center;
   font-size: 16px;
 }
+.customer_btn {
+  padding: 10px 20px;
+}
+.been_customer_boxwrap img {
+  margin-top: 3px;
+}
 /* sec4 */
 .been_customer_sec4_box {
   display: flex;
@@ -387,6 +393,7 @@ header {
   color: #464646;
   line-height: 25px;
 }
+
 .customer_sec4_txt h3 {
   font-size: 18px;
   font-weight: 600;
@@ -424,6 +431,9 @@ header {
   text-align: center;
   font-size: 16px;
 }
+.sec4_box1 > img {
+  margin-top: 50px;
+}
 .sec4_box2 {
   width: 580px;
   display: flex;
@@ -434,7 +444,10 @@ header {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
+.sec4_box2 > img {
+  width: 66px;
+  height: 66px;
+}
 .sec4_customer_btn {
   display: flex;
   flex-direction: column;
@@ -497,6 +510,7 @@ header {
   border: 1px solid #ccc;
   border-radius: 3px;
   position: relative;
+  background-color: #fff;
 }
 .sec5_box::after {
   display: block;
@@ -559,6 +573,7 @@ header {
   width: 100%;
   margin-bottom: 100px;
 }
+
 .sec6_table th {
   background: #f5f5f5;
   border: solid 1px #d9d9d9;
@@ -577,7 +592,34 @@ header {
   font-size: 16px;
   vertical-align: middle;
 }
-
+/* 모바일 테이블 */
+.mobile_customer_sec6 {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 100px;
+  display: none;
+}
+caption {
+  display: none;
+}
+.mobile_customer_sec6 th {
+  background: #f5f5f5;
+  border: solid 1px #d9d9d9;
+  height: 50px;
+  color: #202023;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.mobile_customer_sec6 td {
+  padding: 14px 20px;
+  border: solid 1px #d9d9d9;
+  color: #7a7a7a;
+  text-align: center;
+  font-size: 16px;
+  vertical-align: middle;
+}
 /* ------------------------------------------------------------------- */
 /* footer - 마지막에 수정할것 */
 .footer {
