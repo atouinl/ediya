@@ -14,6 +14,7 @@ body {
 .container_wrap {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 header {
   width: 100%;
@@ -334,7 +335,7 @@ header {
   font-size: 20px;
   margin-bottom: 20px;
   background: url(../images/menu/bean_info_line.gif) no-repeat bottom left;
-  line-height: 76px;
+  line-height: 57px;
 }
 .sub_been_intro_wrap .card2 {
   display: flex;
@@ -342,7 +343,7 @@ header {
   font-size: 20px;
   margin-bottom: 20px;
   background: url(../images/menu/bean_info_line.gif) no-repeat bottom left;
-  line-height: 76px;
+  line-height: 57px;
 }
 .sub_been_intro_wrap .card3 {
   display: flex;
@@ -350,7 +351,7 @@ header {
   font-size: 20px;
   margin-bottom: 20px;
   background: url(../images/menu/bean_info_line.gif) no-repeat bottom left;
-  line-height: 76px;
+  line-height: 57px;
 }
 .been_card1 > p {
   font-size: 13px;
@@ -478,7 +479,7 @@ header {
 /* object-fit은 무조건 넓이 높이가 있어야한다. 쓰고 싶으면 이미지를 감싸...? */
 
 .been_roasting_img {
-  width: 314px;
+  width: 100%;
   height: 135px;
   overflow: hidden;
 }

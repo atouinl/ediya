@@ -14,11 +14,11 @@ function sidemenu() {
   }
 }
 // 햄버거 버튼
-const moIcon = document.getElementsByClassName('m_icon');
+const moIcon = document.querySelector('.m_icon');
 // 모바일 전체메뉴
-const mobile_wrap = document.getElementsByClassName('mobile_wrap');
+const mobile_wrap = document.querySelector('.mobile_wrap');
 //x버튼
-const m_xicon = document.getElementsByClassName('m_xicon');
+const m_xicon = document.querySelector('.m_xicon');
 
 // moIcon.addEventListener("click", () => {
 // mobile_wrap.style.display = "flex";
